@@ -1,0 +1,368 @@
+%tiles-base {
+  position: relative;
+  margin: 10px 0;
+  //padding: rem-calc(40px);
+  color: $white;
+  overflow: hidden;
+
+  &.no-label {
+    .label {
+      display: none;
+    }
+  }
+
+  img {
+    margin: 0;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  .label {
+    background-color: $cyber-green;
+    color: $body-font-color;
+    font-family: $font-semibold;
+    margin-bottom: rem-calc(20px);
+  }
+
+  .tiles__headline {
+    @extend h3;
+    display: block;
+    font-family: $font-xbold;
+    line-height: 1.2em;
+    margin-bottom: rem-calc(30px);
+  }
+
+  .tiles__cta {
+    position: absolute;
+    padding-right: rem-calc(40px);
+    padding-left: rem-calc(40px);
+    right: 0;
+    bottom: rem-calc(40px);
+    left: 0;
+  }
+
+  .tiles__description {
+    opacity: 0;
+    height: 0;
+  }
+
+  .label,
+  .tiles__cta {
+    text-transform: uppercase;
+  }
+
+  @include breakpoint(large) {
+    min-width: 100%;
+  }
+}
+
+%tiles-effect {
+  @include timing();
+  transition-property: color;
+
+  &:after {
+    @include timing();
+    transition-property: opacity;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $cyber-green;
+    content: '';
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .label {
+    @include timing();
+    transition-property: background-color, color;
+  }
+
+  .tiles__description {
+    @include timing();
+    transition-property: opacity, top, height;
+    position: relative;
+    top: -1rem;
+  }
+
+  &:hover,
+  &:focus {
+    color: $body-font-color;
+
+    &:after {
+      opacity: 1;
+    }
+
+    .label {
+      background-color: $cyber-darkgrey;
+      color: $white;
+    }
+
+    .tiles__description {
+      opacity: 1;
+      height: auto;
+      top: 0;
+    }
+  }
+}
+
+.tiles--small {
+  @extend %tiles-base;
+  @extend %tiles-effect;
+  min-width: rem-calc(320px);
+  height: 320px;
+
+  img {
+    @include image-background;
+  }
+
+  .tiles__content {
+    position: absolute;
+    padding: rem-calc(35px) rem-calc(25px);
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .tiles__cta {
+    padding-right: rem-calc(25px);
+    padding-left: rem-calc(25px);
+    bottom: rem-calc(35px);
+  }
+
+  @include breakpoint(medium) {
+    height: rem-calc(400px);
+  }
+}
+
+.tiles--medium,
+.tiles--medium-bottom {
+  @extend %tiles-base;
+  @extend %tiles-effect;
+  min-width: rem-calc(320px);
+  height: 320px;
+
+  img {
+    @include image-background;
+  }
+
+  .tiles__content {
+    position: absolute;
+    padding: rem-calc(40px);
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  @include breakpoint(medium) {
+    height: rem-calc(500px);
+  }
+}
+
+// .tiles--medium-bottom {
+//   @extend %tiles-base;
+//   @extend %tiles-effect;
+//   min-width: rem-calc(320px);
+//   height: 320px;
+//
+//   > img {
+//     @include image-background;
+//   }
+//
+//   .tiles__content {
+//     position: absolute;
+//     padding: rem-calc(40px);
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+//   }
+//
+//   .tiles__description {
+//     margin-bottom: 50px;
+//   }
+//
+//   &:hover,
+//   &:focus {
+//     .tiles__content {
+//       top: 0;
+//       bottom: auto;
+//     }
+//   }
+//
+//   @include breakpoint(large) {
+//     height: rem-calc(500px);
+//   }
+// }
+
+.tiles--long {
+  @extend %tiles-base;
+  @extend %tiles-effect;
+  min-width: rem-calc(320px);
+  padding: rem-calc(40px);
+  height: 420px;
+
+  > img {
+    @include image-background;
+  }
+
+  .tiles__content {
+    position: absolute;
+    padding: rem-calc(40px);
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .tiles__description {
+    margin-bottom: 50px;
+  }
+
+  @include breakpoint(large) {
+    height: rem-calc(500px);
+  }
+}
+
+.tiles--programme {
+  @extend %tiles-base;
+  @extend %tiles-effect;
+  padding: rem-calc(30px);
+  height: rem-calc(300px);
+
+  > img {
+    @include image-background;
+  }
+
+  > .tiles__headline {
+    font-size: rem-calc(24px);
+  }
+
+  > .tiles__timestamp {
+    @extend .tiles__cta;
+    // left: 30px;
+    bottom: 30px;
+    font-size: rem-calc(14px);
+  }
+
+  .tiles__timestamp__date,
+  .tiles__timestamp__location {
+    display: block;
+  }
+}
+
+.tiles--management {
+  @extend %tiles-base;
+  @include timing();
+  transition-property: color;
+  margin: 5px;
+  min-width: 0;
+  padding: 0;
+
+  > img {
+    @include image-background;
+  }
+
+  .tiles__profile {
+    @include timing();
+    transition-property: bottom;
+    position: absolute;
+    bottom: -46px;
+    left: 0;
+    right: 0;
+    padding: 20px 20px 0;
+  }
+
+  .tiles__profile__name,
+  .tiles__profile__designation {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .tiles__profile__name {
+    font-family: $font-xbold;
+    font-size: rem-calc(24px);
+    line-height: 1.2;
+  }
+
+  .tiles__profile__designation {
+    height: 16px;
+    line-height: 16px;
+  }
+
+  &:before {
+    @include timing();
+    transition-property: opacity;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $cyber-green;
+    content: '';
+    opacity: 0;
+  }
+
+  &:hover {
+    color: $body-font-color;
+
+    .tiles__profile {
+      bottom: 0;
+    }
+
+    &:before {
+      opacity: .7;
+    }
+  }
+}
+
+.tiles--partner {
+  @extend %base !optional;
+  padding: 25px;
+  min-width: 0;
+  margin: 0;
+
+  > img {
+    max-height: 50px;
+    margin-bottom: 0 !important;
+  }
+
+  /* Old version backup
+  [class^="icon-"],
+  [class*="icon-"] {
+    display: block;
+    margin-bottom: 20px;
+    color: $cyber-green;
+    font-size: rem-calc(48px);
+  }*/
+
+  .tiles__stats,
+  .tiles__keyword {
+    display: block;
+    color: $white;
+    font-family: $font-xbold;
+    line-height: 1.2;
+  }
+
+  .tiles__stats {
+    font-size: rem-calc(26px);
+    margin-top: 20px;
+  }
+
+  .tiles__keyword {
+    font-size: rem-calc(18px);
+  }
+}
+
+.tiles--plain {
+  @extend %tiles-base;
+  @include timing();
+  padding: 35px 25px;
+
+  &:hover,
+  &:focus {
+    background-color: $cyber-green !important;
+    color: $body-font-color;
+  }
+}

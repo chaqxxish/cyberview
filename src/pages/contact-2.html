@@ -1,0 +1,103 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': true,
+  'imgSrc': 'http://placehold.it/840x570',
+  'preheader': 'Signup for Updates',
+  'header': 'Stay <br/>In The Loop',
+  'content': ! "<p>Don't miss out on our exciting programmes! Be the first to get updates so we can save you a spot.</p>"
+}
+
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="l-contact">
+    <div class="content-box--two">
+      <div class="columns _left">
+        <form class="l-contact__form">
+          <label>Full Name*
+            <input type="text">
+          </label>
+
+          <label>Email*
+            <input type="text">
+          </label>
+
+          <label>Contact Number* <span class="help-text" id="contactNumHelpText">Please enter with country code</span>
+            <input type="text">
+          </label>
+
+          <fieldset class="l-checkbox-radio">
+            <legend>Please select your interest</legend>
+
+            <!-- Must be in this order: input element -> input container -> label -->
+            <div class="checkbox-custom">
+              <input id="checkbox-1" value="" name="checkbox-1" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-1">Young Learners Innovation Programmes</label>
+            </div>
+
+            <div class="checkbox-custom">
+              <input id="checkbox-2" value="" name="checkbox-2" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-2">Cyberjaya Varsity Programme</label>
+            </div>
+
+            <div class="checkbox-custom">
+              <input id="checkbox-3" value="" name="checkbox-3" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-3">Cyberjaya Institute of Higher Learning Network</label>
+            </div>
+
+            <div class="checkbox-custom">
+              <input id="checkbox-4" value="" name="checkbox-4" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-4">Technopreneur Enhancement Programme</label>
+            </div>
+
+            <div class="checkbox-custom">
+              <input id="checkbox-5" value="" name="checkbox-5" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-5">Funding Access Facilitation</label>
+            </div>
+
+            <div class="checkbox-custom">
+              <input id="checkbox-6" value="" name="checkbox-6" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-6">Funding Access Facilitation</label>
+            </div>
+
+            <div class="checkbox-custom">
+              <input id="checkbox-7" value="" name="checkbox-7" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-7">Market &amp; Match</label>
+            </div>
+
+            <div class="checkbox-custom">
+              <input id="checkbox-8" value="" name="checkbox-8" type="checkbox">
+              <span class="input"></span>
+              <label for="checkbox-8">I would like to sign up for the weekly Cyberjaya Buzz and be updated with the latest happenings in Cyberjaya</label>
+            </div>
+
+          </fieldset>
+
+          <div class="text-center">
+            <button class="button" type="submit">Get Updates</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="columns _right">
+        <h6>Interested in collaborations for university programmes?</h6>
+        <br/>
+        <div class="text-center">
+          <a href="#" class="button">Get Connected</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

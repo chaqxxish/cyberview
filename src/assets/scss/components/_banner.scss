@@ -1,0 +1,315 @@
+.l-banner--page,
+.l-banner--landing {
+  position: relative;
+  margin-bottom: rem-calc(40px);
+}
+
+.l-banner--page {
+  background-color: #000;
+}
+
+.l-banner__description {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: rem-calc(20px) rem-calc(10px) 0;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.banner--page {
+  position: relative;
+  @include flex-grid-row(null, rem-calc(1140px), null, true, $grid-column-gutter);
+
+  .banner__content,
+  .banner__image {
+    @include flex-grid-column(12, 0);
+  }
+
+  .banner__image {
+    @include flex-grid-order(0);
+    position: relative;
+    width: 200%;
+    height: rem-calc(345px);
+    //max-width: 820px;
+    overflow: hidden;
+
+    > img {
+      @include center-translate;
+      min-width: 100%;
+      max-width: none;
+    }
+  }
+
+  .banner__content {
+    @include flex-grid-order(1);
+  }
+
+  .banner__content__description {
+    padding: rem-calc(20px) rem-calc(10px);
+    color: #F7F6F6;
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .header-box--social {
+    padding-right: rem-calc(10px);
+    padding-left: rem-calc(10px);
+    background-color: rgba(38, 38, 38, 1);
+  }
+
+  .share {
+    display: block;
+    position: absolute;
+    top: rem-calc(20px);
+    right: rem-calc(20px);
+    z-index: 2;
+  }
+
+  @include breakpoint(840px) {
+    .banner__image {
+      @include flex-grid-column(null, $grid-column-gutter);
+      @include flex-grid-order(1);
+      position: relative;
+      width: 200%;
+      height: rem-calc(570px);
+      //max-width: 820px;
+      overflow: hidden;
+
+      > img {
+        @include center-translate;
+        max-width: none;
+      }
+    }
+
+    .banner__content {
+      @include flex-grid-column(null, $grid-column-gutter);
+      @include flex-grid-order(0);
+      max-width: rem-calc(390px);
+    }
+
+    .banner__content__header {
+      //background-color: #000;
+      height: rem-calc(250px);
+    }
+
+    .banner__content__description {
+      padding-top: rem-calc(25px);
+      padding-right: rem-calc(20px);
+      //padding-bottom: rem-calc(25px);
+      padding-left: 0;
+    }
+
+    .header-box--social {
+      position: absolute;
+      top: rem-calc(35px);
+      left: 0;
+      padding-left: rem-calc(10px);
+      min-width: rem-calc(515px);
+      height: 215px;
+      background-color: rgba(38, 38, 38, .8);
+      z-index: 1;
+    }
+
+    .share {
+      top: rem-calc(60px);
+      right: rem-calc(10px);
+    }
+
+    &.banner-inverted {
+      .banner__image {
+        @include flex-grid-order(0);
+      }
+
+      .banner__content {
+        @include flex-grid-order(1);
+      }
+
+      .banner__content__description {
+        padding-left: rem-calc(20px);
+        padding-right: 0;
+      }
+
+      .header-box--social {
+        left: auto;
+        right: 0;
+        padding-left: rem-calc(50px);
+        padding-right: rem-calc(10px);
+      }
+    }
+  }
+
+  @include breakpoint(xlarge)  {
+    //padding-left: rem-calc(60px);
+
+    .header-box--social {
+      padding-left: rem-calc(70px);
+    }
+
+    .share {
+      right: rem-calc(70px);
+    }
+
+    &.banner-inverted {
+      //padding-left: 0;
+      //padding-right: rem-calc(60px);
+
+      .header-box--social {
+        padding-right: rem-calc(70px);
+      }
+    }
+  }
+}
+
+.banner--landing {
+  background-color: #000;
+
+  .banner__wrapper {
+    position: relative;
+    @include flex-grid-row(null, rem-calc(1140px), null, true, $grid-column-gutter);
+    //height: 515px;
+  }
+
+  .banner__media,
+  .banner__content {
+    @include flex-grid-column(12, 0);
+  }
+
+  .banner__headline {
+    color: $cyber-green;
+  }
+
+  .banner__media__image {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: rem-calc(345px);
+    overflow: hidden;
+
+    > img {
+      @include center-translate;
+      min-width: 100%;
+      max-width: none;
+    }
+  }
+
+  .header-box--social {
+    background-color: rgba(38, 38, 38, 1);
+  }
+
+  .header-box--social,
+  .banner__media__description {
+    padding: rem-calc(20px) rem-calc(10px);
+  }
+
+  .banner__media__description > p:last-child{
+    margin-bottom: 0;
+  }
+
+  .header-box__prehead {
+    color: $cyber-green;
+    margin-bottom: 0;
+  }
+
+  .banner__content {
+    padding: rem-calc(30px) rem-calc(10px) rem-calc(30px) rem-calc(30px);
+    background-color: $cyber-green;
+  }
+
+  .news__listing {
+    padding-right: rem-calc(20px);
+  }
+
+  /* Carousel theme */
+  .banner__media {
+    .slick-slider {
+      margin-bottom: 0;
+    }
+
+    .slick-dots {
+      top: auto;
+      bottom: 0;
+      margin: 0 0 rem-calc(15px);
+      z-index: 1;
+    }
+  }
+
+  /* Media queries */
+  @include breakpoint(840px) {
+    .banner__wrapper {
+      height: 515px;
+    }
+
+    .banner__media,
+    .banner__content {
+      @include flex-grid-column(null, 0);
+    }
+
+    .banner__media {
+      max-width: rem-calc(980px);
+      width: percentage(980px/1210px);
+
+      .slick-dots {
+        width: auto;
+        //top: auto;
+        left: auto;
+        right: rem-calc(60px);
+      }
+    }
+
+    .banner__media__image {
+      height: rem-calc(515px);
+    }
+
+    .banner__media__description {
+      position: relative;
+      padding-right: rem-calc(60px);
+      padding-bottom: 0;
+    }
+
+    .banner__headline {
+      position: absolute;
+      padding-right: rem-calc(250px);
+      bottom: 100%;
+      line-height: 1;
+      font-size: rem-calc(90px);
+    }
+
+    .banner__content {
+      @include flex-grid-column-align(top);
+      margin-top: rem-calc(360px);
+      margin-left: rem-calc(-50px);
+      padding: rem-calc(20px 10px 20px 20px);
+      max-width: rem-calc(280px);
+      z-index: 1;
+    }
+
+    .header-box--social {
+      position: absolute;
+      bottom: rem-calc(155px);
+      right: 0;
+      //height: rem-calc(270px);
+      max-width: rem-calc(700px);
+      padding-right: rem-calc(70px);
+      padding-left: rem-calc(50px);
+      background-color: rgba(38, 38, 38, .8);
+    }
+
+    .header-box__headline {
+      font-size: rem-calc(64px);
+      line-height: 1.2;
+      //white-space: nowrap;
+    }
+  }
+
+  @include breakpoint(xlarge) {
+    //padding-right: rem-calc(70px);
+
+    .banner__media__description {
+      padding-left: rem-calc(70px);
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.l-icons {
+  &--three {
+    @extend .l-icons !optional;
+
+    .columns {
+      @include flex-grid-column(6);
+    }
+
+    @include breakpoint(large) {
+      .columns {
+        @include flex-grid-column(4);
+      }
+    }
+  }
+
+  &--four {
+    @extend .l-icons !optional;
+
+    .columns {
+      @include flex-grid-column(6);
+    }
+
+    @include breakpoint(large) {
+      .columns {
+        @include flex-grid-column(3);
+      }
+    }
+  }
+
+  &--five {
+    @extend .l-icons !optional;
+
+    .columns {
+      @include flex-grid-column(4);
+    }
+
+    @include breakpoint(large) {
+      .content-box {
+        //@include flex-grid-row(null, $grid-row-width, 10, false, $grid-column-gutter);
+      }
+
+      .columns {
+        @include flex-grid-column(20%);
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+body {
+  overflow-x: hidden;
+}
+
+a {
+  @include timing(.2s);
+  transition-property: color;
+}
+
+strong,
+b {
+  font-family: $font-xbold;
+  font-weight: normal;
+}
+
+img {
+  &.float-right {
+    margin-left: 1rem;
+  }
+
+  &.float-left {
+    margin-right: 1rem;
+  }
+}

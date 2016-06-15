@@ -1,0 +1,65 @@
+.button {
+  font-family: $font-heavy;
+  text-transform: uppercase;
+
+  &:first-child {
+    margin-left: $global-margin/2;
+  }
+}
+
+// .l-scrolltop {
+//   position: fixed;
+//   width: 100%;
+//   //height: 50px;
+//   max-width: $global-width;
+//   left: 50%;
+//   transform: translate(-50%, 0);
+//   bottom: calc(165px + 50px);
+//   @include side-padding();
+//   z-index: 10;
+//
+//   .button-scrolltop {
+//     position: absolute;
+//     right: 10px;
+//     opacity: 0;
+//     z-index: -1;
+//
+//     &.is-active {
+//       opacity: 1;
+//       z-index: 1;
+//     }
+//   }
+//
+//   @include breakpoint(xlarge) {
+//     .button-scrolltop {
+//       right: 70px;
+//     }
+//   }
+// }
+
+.button-scrolltop {
+  @include timing();
+  transition-property: background-color, opacity, bottom;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #999a9b;
+  border-radius: 8px;
+  font-size: 36px;
+  color: $white;
+  outline: 0;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  z-index: -1;
+
+  &.is-active {
+    opacity: 1;
+    z-index: 10;
+  }
+
+  &:hover,
+  &:active {
+    background-color: #404143;
+  }
+}

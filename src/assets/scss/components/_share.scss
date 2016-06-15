@@ -1,0 +1,42 @@
+%button-share {
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid $cyber-green;
+  border-radius: 100%;
+  color: $cyber-green;
+  font-size: rem-calc(24px);
+  //margin-bottom: 10px;
+}
+
+.share__toggle,
+.share__facebook,
+.share__twitter,
+.share__email {
+  @extend %button-share;
+  outline: 0;
+}
+
+.share__facebook,
+.share__twitter,
+.share__email {
+  position: absolute;
+  z-index: -1;
+}
+
+.share__facebook {
+  @include mui-slide(in, down, 50px, true, .2s, ease-in);
+  top: 50px;
+}
+
+.share__twitter {
+  @include mui-slide(in, down, 100px, true, .2s, ease-in, .2s);
+  top: 100px;
+}
+
+.share__email {
+  @include mui-slide(in, down, 150px, true, .2s, ease-in, .4s);
+  top: 150px;
+}

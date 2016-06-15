@@ -1,0 +1,262 @@
+// .row--overflow {
+//   @include flex-grid-row(null, $grid-row-width, null, true, 0);
+//
+//   >.column,
+//   >.columns {
+//     @include flex-grid-column(6);
+//     @include flex-grid-column-align(middle);
+//   }
+// }
+
+%content-box {
+  @include flex-grid-row(null, $grid-row-width, null, true, $grid-column-gutter);
+  @include side-padding();
+
+  [class^="content-box-"],
+  [class*="content-box"] {
+    @include flex-grid-row(nest, $grid-row-width, null, false, $grid-column-gutter);
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.align-middle {
+    @include flex-grid-row-align(null, middle);
+  }
+
+  &.align-center {
+    @include flex-grid-row-align(center, null);
+  }
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint(medium) {
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  .columns > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.content-box--overflow {
+  @extend %content-box;
+
+  > .columns,
+  > .columns--float {
+    @include flex-grid-column(12);
+  }
+
+  > ._left {
+    @include flex-grid-order(1);
+  }
+
+  > ._right {
+    @include flex-grid-order(0);
+  }
+
+  &.is-inverted {
+    > ._left {
+      @include flex-grid-order(0);
+    }
+
+    > ._right {
+      @include flex-grid-order(1);
+    }
+  }
+
+  @include breakpoint(medium) {
+    > .columns {
+      @include flex-grid-column(6);
+    }
+
+    > .columns--float {
+      .float-right {
+        margin-right: -10px;
+      }
+    }
+
+    > ._left {
+      @include flex-grid-order(0);
+    }
+
+    > ._right {
+      @include flex-grid-order(1);
+      padding-right: 0;
+    }
+
+    &.is-inverted {
+      > .columns--float {
+        .float-left {
+          margin-left: -10px;
+        }
+      }
+
+      > ._left {
+        padding-left: 0;
+      }
+
+      > ._right {
+        padding-right: 10px;
+      }
+    }
+  }
+
+  @include breakpoint(xlarge) {
+    padding-left: 60px;
+    padding-right: 0;
+
+    > .columns {
+      @include flex-grid-column(null);
+    }
+
+    > .columns--float {
+      padding-right: 70px;
+
+      .float-right {
+        margin-right: -70px;
+      }
+    }
+
+    > ._left {
+      max-width: rem-calc(570px);
+    }
+
+    > ._right {
+      max-width: rem-calc(640px);
+      padding-right: 0;
+    }
+
+    &.is-inverted {
+      padding-left: 0;
+      padding-right: 60px;
+
+      > .columns--float {
+        padding-left: 70px;
+
+        .float-left {
+          margin-left: -70px;
+        }
+      }
+
+      > ._left {
+        max-width: rem-calc(640px);
+      }
+
+      > ._right {
+        max-width: rem-calc(570px);
+      }
+    }
+  }
+}
+
+.content-box--seventh {
+  @extend %content-box;
+
+  > .columns {
+    @include flex-grid-column(12);
+  }
+
+  &.is-inverted {
+    > ._left {
+      @include flex-grid-order(1);
+    }
+
+    > ._right {
+      @include flex-grid-order(0);
+    }
+  }
+
+  @include breakpoint(medium) {
+    > ._left {
+      @include flex-grid-column(7);
+    }
+
+    > ._right {
+      @include flex-grid-column(5);
+    }
+
+    &.is-inverted {
+      > ._left {
+        @include flex-grid-column(5);
+        @include flex-grid-order(0);
+      }
+
+      > ._right {
+        @include flex-grid-column(7);
+        @include flex-grid-order(1);
+      }
+    }
+  }
+}
+
+.content-box {
+  @extend %content-box;
+}
+
+.content-box--one {
+  @extend %content-box;
+
+  > .columns {
+    @include flex-grid-column(12);
+  }
+}
+
+.content-box--two {
+  @extend %content-box;
+
+  > .columns {
+    @include flex-grid-column(12);
+  }
+
+  @include breakpoint(medium) {
+    > .columns {
+      @include flex-grid-column(6);
+    }
+  }
+}
+
+.content-box--three {
+  @extend %content-box;
+
+  > .columns {
+    @include flex-grid-column(12);
+  }
+
+  @include breakpoint(medium) {
+    > .columns {
+      @include flex-grid-column(4);
+    }
+  }
+}
+
+.content-box--four {
+  @extend %content-box;
+
+  > .columns {
+    @include flex-grid-column(6);
+  }
+
+  @include breakpoint(large) {
+    > .columns {
+      @include flex-grid-column(3);
+    }
+  }
+}
+
+.content-box--five {
+  @extend %content-box;
+
+  .columns {
+    @include flex-grid-column(4);
+  }
+
+  @include breakpoint(large) {
+    .columns {
+      @include flex-grid-column(20%);
+    }
+  }
+}

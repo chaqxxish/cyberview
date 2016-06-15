@@ -1,0 +1,76 @@
+.l-tabs {
+  .tabs,
+  .tabs-content {
+    border: 0;
+  }
+
+  .tabs {
+    @include flex-grid-row(null, $grid-row-width, null, true, $grid-column-gutter);
+    margin: rem-calc(25px) rem-calc(-10px);
+  }
+
+  .tabs-title {
+    float: none;
+    position: relative;
+    @include flex-grid-column(6);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:before {
+      position: absolute;
+      border-right: 1px solid $cyber-darkgrey;
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 10px;
+    }
+
+    &:after {
+      position: absolute;
+      border-right: 1px solid $cyber-darkgrey;
+      content: '';
+      top: 0;
+      right: 10px;
+      bottom: 0;
+    }
+
+    > a {
+      font-size: rem-calc(18px);
+      font-family: $font-heavy;
+      color: $tab-item-color;
+      text-align: center;
+
+      &:hover {
+        color: smart-scale($tab-item-color);
+      }
+
+      &:focus,
+      &[aria-selected='true'] {
+        color: $cyber-green;
+      }
+    }
+  }
+
+  @include breakpoint(large) {
+    .tabs {
+      margin: $tab-margin;
+    }
+
+    .tabs-title {
+      @include flex-grid-column(shrink, 0);
+
+      &:before,
+      &:after {
+        content: none;
+      }
+
+      > a {
+        border-right: 1px solid $cyber-darkgrey;
+      }
+
+      &:first-child > a {
+        border-left: 1px solid $cyber-darkgrey;
+      }
+    }
+  }
+}

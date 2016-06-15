@@ -1,0 +1,22 @@
+.toggle {
+  margin: 1rem 0;
+}
+
+.toggle__button {
+  color: $body-font-color;
+  font-family: $font-heavy;
+  text-transform: uppercase;
+
+  &:after {
+    position: relative;
+    top: -1px;
+    font-family: 'Cyberview';
+    content: $icon-chevron-small-right;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+}
+
+.toggle__content {
+  display: none;
+}

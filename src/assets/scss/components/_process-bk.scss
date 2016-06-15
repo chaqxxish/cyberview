@@ -1,0 +1,51 @@
+.process {
+  display: inline-block;
+  max-width: 235px;
+  width: 100%;
+}
+
+.process__headline {
+  padding: 0 20px 20px;
+  text-align: center;
+  white-space: nowrap;
+
+  sup {
+    font-family: $font-heavy;
+    font-size: rem-calc(20px);
+    text-transform: uppercase;
+    top: -1.5em;
+  }
+
+  .stat {
+    font-family: $font-heavy;
+    font-size: rem-calc(64px);
+  }
+}
+
+.process__seperator {
+  position: relative;
+  display: block;
+  margin-right: 3px;
+  height: 6px;
+  background-color: $body-font-color;
+
+  &:before {
+    @include css-triangle(3px, $white, right);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  &:after {
+    @include css-triangle(3px, $body-font-color, right);
+    position: absolute;
+    right: -3px;
+    top: 0;
+  }
+}
+
+.process__description {
+  text-align: center;
+  padding: 20px;
+  font-size: rem-calc(18px);
+}

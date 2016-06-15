@@ -1,0 +1,46 @@
+.l-background {
+  position: relative;
+  //overflow: hidden;
+  padding-bottom: rem-calc(1px);
+
+  &:before {
+    position: absolute;
+    height: rem-calc(250px);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    // background-image: url('http://placehold.it/1280x500');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: '';
+    z-index: -1;
+  }
+
+  &:after {
+    position: absolute;
+    height: rem-calc(250px);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: '';
+    z-index: -1;
+    background: rgba(243,243,243,1);
+    background: -moz-linear-gradient(top, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 26%, rgba(243,243,243,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(243,243,243,1)), color-stop(26%, rgba(243,243,243,1)), color-stop(100%, rgba(243,243,243,0)));
+    background: -webkit-linear-gradient(top, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 26%, rgba(243,243,243,0) 100%);
+    background: -o-linear-gradient(top, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 26%, rgba(243,243,243,0) 100%);
+    background: -ms-linear-gradient(top, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 26%, rgba(243,243,243,0) 100%);
+    background: linear-gradient(to bottom, rgba(243,243,243,1) 0%, rgba(243,243,243,1) 26%, rgba(243,243,243,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f3', endColorstr='#f3f3f3', GradientType=0 );
+  }
+
+  @include breakpoint(large) {
+    //padding-bottom: rem-calc(230px);
+
+    &:before,
+    &:after {
+      height: rem-calc(500px);
+    }
+  }
+}

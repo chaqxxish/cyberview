@@ -1,0 +1,13 @@
+.txt-green {
+  color: $cyber-green;
+}
+
+.txt-underline {
+  text-decoration: underline;
+}
+
+.link-black {
+  @extend a;
+  color: $body-font-color;
+  font-family: $font-heavy;
+}

@@ -1,0 +1,19 @@
+.l-process {
+
+  .content-box {
+    @include flex-grid-row-align(center, null);
+  }
+
+  .columns {
+    @include flex-grid-column(6, 0);
+  }
+
+  @include breakpoint(medium) {
+    .columns {
+      @include flex-grid-column(null, 0);
+      text-align: center;
+      max-width: 100%
+      //flex-basis: auto;
+    }
+  }
+}

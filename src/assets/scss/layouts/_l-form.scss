@@ -1,0 +1,176 @@
+.l-contact {
+  > .content-box--two {
+    @include flex-grid-row-align(justify, null);
+    > .columns {
+      @include flex-grid-column(12, $grid-column-gutter);
+    }
+
+    > ._right {
+      margin-top: 20px;
+    }
+
+    @include breakpoint(large) {
+      > ._left {
+        @include flex-grid-column(6, $grid-column-gutter);
+      }
+
+      > ._right {
+        @include flex-grid-column(5, $grid-column-gutter);
+        margin-top: 0;
+      }
+    }
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  label {
+    font-family: $font-heavy;
+    text-transform: uppercase;
+  }
+
+  h6,
+  legend {
+    @extend label;
+    margin-bottom: $header-margin-bottom;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  [type='text'],
+  [type='email'],
+  select,
+  .selectbox-custom:after {
+    height: rem-calc(45px);
+    margin-bottom: rem-calc(30px);
+  }
+
+  .selectbox-custom:after {
+    line-height: rem-calc(45px);
+  }
+
+  .help-text {
+    font-family: $font-regular;
+  }
+
+  .contact__name,
+  .contact__tel {
+    display: block;
+  }
+
+  .contact__name {
+    font-family: $font-bold;
+  }
+
+  .media-object {
+    a {
+      @extend a;
+      color: $body-font-color;
+    }
+
+    i {
+      font-size: rem-calc(24px);
+    }
+  }
+}
+
+.selectbox-custom {
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(1));
+    line-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(1));
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: $input-border;
+    content: $icon-chevron-small-down;
+    font-family: 'cyberview';
+    font-size: rem-calc(18px);
+    z-index: -1;
+  }
+}
+
+.checkbox-custom {
+  display: table;
+  position: relative;
+  margin-bottom: 20px;
+
+  [type='checkbox'],
+  [type='radio'] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    width: rem-calc(45px);
+    height: rem-calc(45px);
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .input + label {
+    display: table-cell;
+    padding-left: rem-calc(30px);
+    font-family: $font-bold;
+    line-height: 1.4;
+    cursor: pointer;
+    margin: 0;
+    vertical-align: middle;
+    text-transform: none;
+  }
+
+  .input {
+    position: relative;
+    display: table-cell;
+    background: transparent;
+    border: $input-border;
+    vertical-align: middle;
+    width: rem-calc(45px);
+    height: rem-calc(45px);
+    text-align: center;
+  }
+
+  [type='checkbox']:checked + .input:before {
+    font-family: 'cyberview';
+    font-size: rem-calc(20px);
+    color: $cyber-green;
+    content: $icon-checkmark;
+    line-height: rem-calc(43px);
+  }
+}
+
+.radio-custom {
+  @extend .checkbox-custom;
+
+  [type='radio'] + .input {
+    border-radius: 50%;
+  }
+
+  [type='radio']:checked + .input:before {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: $cyber-green;
+    border-radius: 50%;
+    content: '';
+  }
+}
+
+.l-checkbox-radio {
+  padding-left: 80px;
+
+  > legend,
+  > .checkbox-custom {
+    margin-left: -80px;
+  }
+}

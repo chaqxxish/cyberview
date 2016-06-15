@@ -1,0 +1,132 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': false,
+  'imgSrc': '/assets/img/banner-event.jpg',
+  'preheader': 'Events',
+  'header': 'Happenings in <br/>the Hub',
+  'content': '<p>Stay up to date with all the latest events taking place in the Tech Hub.</p>'
+}
+
+event: [{
+  'category':  'Business',
+  'title':  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem repellendus temporibus quis unde labore expedita aliquid, quo reiciendis reprehenderit!'
+},
+{
+  'category':  'Tech',
+  'title':  'Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus porro sint est nam explicabo nobis ipsa reiciendis quidem. Labore in officiis reprehenderit. Vero nam porro excepturi! Quod delectus culpa odit.'
+},
+{ 
+  'category':  'Community',
+  'title':  'Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus porro sint est nam explicabo nobis ipsa reiciendis quidem. Labore in officiis reprehenderit. Vero nam porro excepturi! Quod delectus culpa odit.'
+}]
+
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="l-tabs">
+    <div class="content-box--one">
+      <div class="columns">
+        <ul class="tabs">
+          <li class="tabs-title is-active"><a href="events.html" aria-selected="true">Upcoming Events</a></li>
+          <li class="tabs-title"><a href="#">Past Events</a></li>
+        </ul>
+        <p>
+          We've got a lot going on here in Cyberjaya. From business to tech events, and even for the community - there's something for everyone. So make sure you get the latest updates for all our major happenings!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <div class="filter-event">
+        <label>Show Only
+          <select class="filter-event">
+            <option value="all">All Events</option>
+            <option value=".Community">Community</option>
+            <option value=".Business">Business</option>
+            <option value=".Tech">Tech</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="events-list" class="content-box--one">
+  <div class="l-tiles--plain" data-equalizer>
+    <div class="content-box--two mixitup">
+      {{#each event}}
+      <div class="columns {{category}}">
+        <a href="#">
+          <div class="tiles--plain" data-equalizer-watch>
+            <div class="tiles__content">
+              <span class="label">{{category}}</span>
+              <span class="tiles__headline">{{title}}</span>
+              <p>{{description}}</p>
+
+              <ul class="content-box--two event--info">
+                <li class="columns">
+                  <p>
+                    <span class="icon2 icon2-calendar"></span>
+                    Apr 26, 2016 - Apr 27, 2016
+                  </p>
+                </li>
+                <li class="columns">
+                  <p>
+                    <span class="icon2 icon2-clock"></span>
+                    9.00 - 17.00
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span class="icon2 icon2-marker"></span>
+                    Cyberview Living Lab - Level 4, Cyberview Sdn Bhd, Block 3750, Persiaran APEC, Cyber 8, 63000, Cyberjaya, Selangor
+                  </p>
+                </li>
+              </ul>
+
+              <span class="tiles__cta">
+                Details
+                <i class="icon-chevron-small-right align-middle"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+<section class="l-section">
+  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    <li class="pagination-previous disabled">
+      <span class="icon icon-chevron-thin-left"></span>
+      <span class="show-for-sr">Previous</span>
+    </li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next">
+      <a href="#" aria-label="Next page">
+        <span class="icon icon-chevron-thin-right"></span>
+        <span class="show-for-sr">Next</span>
+      </a>
+    </li>
+  </ul>
+</section>

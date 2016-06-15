@@ -1,0 +1,41 @@
+.header-box--social {
+  padding: 25px 50px;
+  background-color: rgba(38, 38, 38, .8);
+}
+
+.header-box__prehead {
+  color: $cyber-green;
+  margin-bottom: 0;
+}
+
+.header-box__headline,
+.header-box__lead,
+.header-box__cta {
+  display: block;
+}
+
+.header-box__lead,
+.header-box__cta {
+  color: $white;
+
+  /* Old version backup
+  > i {
+    color: $cyber-green;
+    margin-left: 10px;
+    font-size: rem-calc(24px);
+  }*/
+}
+
+.header-box__headline {
+  @extend h1;
+}
+
+.header-box__lead {
+  font-size: rem-calc(20px);
+  font-family: $font-semibold;
+}
+
+.header-box__cta {
+  text-transform: uppercase;
+  margin-top: 1rem;
+}

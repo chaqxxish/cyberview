@@ -1,0 +1,231 @@
+.l-footer {
+  position: relative;
+  font-size: rem-calc(14px);
+  color: $white;
+
+  &:before,
+  &:after {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    content: '';
+    z-index: -1;
+  }
+
+  &:before {
+    background-color: $black;
+    right: 50%;
+  }
+
+  &:after {
+    background-color: $cyber-darkgrey;
+    left: 50%;
+  }
+
+  > .row {
+    @include side-padding();
+  }
+
+  .row {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .nav--footer {
+    list-style: none;
+    margin-left: 0;
+
+    > li {
+      padding-bottom: rem-calc(10px);
+    }
+
+    .nav__link {
+      @extend a;
+      color: inherit;
+    }
+  }
+
+  h6 {
+    margin-bottom: rem-calc(15px);
+  }
+}
+
+.l-footer__sitemap,
+.l-footer__contact,
+.l-footer__social {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include breakpoint(medium) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include breakpoint(large) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.l-footer__sitemap {
+  background-color: $black;
+
+  @include breakpoint(large) {
+    padding-right: 40px;
+  }
+}
+
+.l-footer__contact {
+  background-color: $cyber-darkergrey;
+
+  address {
+    font-style: normal;
+  }
+
+  @include breakpoint(large) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.l-footer__social {
+  background-color: $cyber-darkgrey;
+  text-align: center;
+
+  .nav--social {
+    margin-left: 0;
+    margin-bottom: 0;
+
+    > li {
+      display: inline-block;
+      list-style: none;
+      margin-left: 15px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    .nav__link {
+      @extend a;
+      display: block;
+      font-size: rem-calc(20px);
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      color: lighten($cyber-darkgrey, 40%);
+      border: 1px solid lighten($cyber-darkgrey, 20%);
+      border-radius: 100%;
+      text-align: center;
+    }
+  }
+
+  .input-group {
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    //margin: 0 auto;
+
+    .button {
+      margin-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  @include breakpoint(medium) {
+    text-align: left;
+
+    .input-group {
+      max-width: none;
+    }
+
+    .nav--social {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  @include breakpoint(large) {
+    padding-left: 40px;
+  }
+}
+
+.l-footer__copyright {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: $black;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0,251,65,0);
+    background: -moz-linear-gradient(left, rgba(0,251,65,0) 10%, rgba(0,251,65,1) 40%, rgba(0,251,65,1) 60%, rgba(0,251,65,0) 90%);
+    background: -webkit-gradient(left top, right top, color-stop(10%, rgba(0,251,65,0)), color-stop(40%, rgba(0,251,65,1)), color-stop(60%, rgba(0,251,65,1)), color-stop(90%, rgba(0,251,65,0)));
+    background: -webkit-linear-gradient(left, rgba(0,251,65,0) 10%, rgba(0,251,65,1) 40%, rgba(0,251,65,1) 60%, rgba(0,251,65,0) 90%);
+    background: -o-linear-gradient(left, rgba(0,251,65,0) 10%, rgba(0,251,65,1) 40%, rgba(0,251,65,1) 60%, rgba(0,251,65,0) 90%);
+    background: -ms-linear-gradient(left, rgba(0,251,65,0) 10%, rgba(0,251,65,1) 40%, rgba(0,251,65,1) 60%, rgba(0,251,65,0) 90%);
+    background: linear-gradient(to right, rgba(0,251,65,0) 10%, rgba(0,251,65,1) 40%, rgba(0,251,65,1) 60%, rgba(0,251,65,0) 90%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fb41', endColorstr='#00fb41', GradientType=1 );
+    content: '';
+  }
+
+  > .row {
+    @include side-padding();
+  }
+
+  .nav--copyright {
+    margin-bottom: 0;
+
+    > li {
+      display: inline-block;
+      font-size: rem-calc(12px);
+      line-height: 1em;
+      margin-left: -4px;
+      padding-bottom: 0;
+      padding-right: 15px;
+      padding-left: 15px;
+      border-left: 1px solid $cyber-darkgrey;
+
+      &:first-child {
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .nav__link {
+      @extend a;
+      color: $white;
+    }
+  }
+
+  .nav--copyright--mobile {
+    @extend .nav--copyright;
+    margin-left: 0;
+
+    > li {
+      padding-bottom: 0;
+      line-height: 1.2;
+    }
+
+    .nav__link {
+      font-size: rem-calc(16px);
+      color: $cyber-green;
+      font-family: $font-xbold;
+    }
+  }
+
+  .img-logo {
+    width: rem-calc(75px);
+  }
+}

@@ -1,0 +1,55 @@
+.l-box-links {
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include breakpoint(medium) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.box-links {
+  list-style: none;
+  margin-bottom: 20px;
+  margin-left: 0;
+
+  li {
+    color: $body-font-color;
+    border-bottom: 1px solid $body-font-color;
+    border-right: 1px solid $body-font-color;
+    border-left: 1px solid $body-font-color;
+
+    &:first-child {
+      border-top: 1px solid $body-font-color;
+    }
+  }
+
+  .box-links__link {
+    @extend a;
+    position: relative;
+    display: block;
+    padding: 15px 50px 15px 20px;
+    color: inherit;
+    line-height: 1.4;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 10px;
+      bottom: 0;
+      width: 30px;
+      height: 30px;
+      margin: auto;
+      line-height: 1;
+      font-size: rem-calc(30px);
+      font-family: 'cyberview';
+      content: $icon-chevron-small-right;
+    }
+  }
+
+  @include breakpoint(medium) {
+    li {
+      max-width: 480px;
+    }
+  }
+}

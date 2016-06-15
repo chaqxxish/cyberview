@@ -1,0 +1,76 @@
+@mixin aspect-ratio($width, $height, $selector: "> :first-child") {
+  $selector: unquote($selector);
+
+  position: relative;
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+  #{$selector} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@mixin text-truncate(
+  $font-size: $global-font-size,
+  $line-height: $paragraph-lineheight,
+  $lines-to-show: 3
+) {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  // max-width: 400px;
+  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin center-translate($horizontal: true, $vertical: true) {
+  position: absolute;
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@mixin side-padding($padding: 60px, $breakpoint: xlarge) {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include breakpoint($breakpoint) {
+    padding-left: rem-calc($padding);
+    padding-right: rem-calc($padding);
+  }
+}
+
+@mixin image-background() {
+  @include center-translate;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  max-height: none;
+  z-index: -1;
+}
+
+@mixin timing($duration: .5s, $delay: 0, $timing: cubic-bezier(0.5, 0.05, 0.5, 1)) {
+  transition-duration: $duration;
+  transition-delay: $delay;
+  transition-timing-function: $timing;
+}
