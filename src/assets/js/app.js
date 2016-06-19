@@ -63,4 +63,76 @@ $('.header-box__listing').slick({
 $('.nav--main').cyberviewNav();
 
 /* Landing banner new listing scrollbar */
-$('.news__listing').perfectScrollbar();
+$(".news__listing-scroller").simplemarquee({
+  speed: 20,
+  direction: "top",
+  cycles: "infinity",
+  space: 30,
+  delayBetweenCycles:0,
+  handleResize: !0
+})
+
+$('.carousel-withthumbnails-thumbnails').slick({
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: false,
+  arrows: true,
+  centerMode: false,
+  responsive: [{
+    breakpoint: 860,
+    settings: { 
+      arrows: false,
+      dots: true
+   }
+  }]
+});
+
+$('.carousel-withthumbnails-thumbnails li').on('click', function  () {
+  var load = $(this).find('img').data('url'),
+      type = $(this).find('img').data('type');
+  $('.carousel-withthumbnails li').html($('<' + type + '>').attr('src', load));
+});
+
+$('.tabs-title').on('click', function () {
+  $('.carousel-withthumbnails ul').resize();
+})
+
+// Go through each slider and assign custom paging slider
+$('.ts-slider').each(function () {
+  $(this).slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+    dots: true,
+    focusOnSelect: true,
+    appendDots: $(this).prev().find('.slick-custompaging'),
+    customPaging: function (slider, i) {
+      var name = $(slider.$slides[i]).data('paging');
+      return '<a href="#">' + name + '</a>';
+    },
+    responsive: [{
+      breakpoint: 640,
+      settings: { arrows: true }
+    }]
+  });
+
+  var $nav = $(this).parent().find('.slick-custompaging');
+
+  // Do not initializa custom scroll bar if content 
+  // is less than 4. This is so that the nav will
+  // have a full  width tab.
+  if ($nav.find('.slick-dots li').length <= 4) {
+    $nav.addClass('l-tabs--pill__justified');
+  } else {
+    $nav.mCustomScrollbar({
+      axis:"x",
+      theme:"dark-thin",
+      scrollbarPosition: 'outside',
+      scrollButtons: { 
+        enable: true
+        },
+      advanced:{autoExpandHorizontalScroll:true}
+    })
+  }
+})

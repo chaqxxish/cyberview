@@ -32,6 +32,10 @@
     font-family: $font-xbold;
     line-height: 1.2em;
     margin-bottom: rem-calc(30px);
+
+    &.tiles__headline--small {
+      @extend h5;
+    }
   }
 
   .tiles__cta {
@@ -106,6 +110,12 @@
       height: auto;
       top: 0;
     }
+  }
+}
+
+.tiles__metadata {
+  @include breakpoint(large) {
+    margin-top: 40px;
   }
 }
 
@@ -365,4 +375,60 @@
     background-color: $cyber-green !important;
     color: $body-font-color;
   }
+}
+
+.tiles--events, .tiles--resources {
+  @extend %tiles-base;
+  padding: 35px 25px;
+
+  &:hover,
+  &:focus {
+    background-color: $cyber-green !important;
+    color: $body-font-color;
+  }
+
+  p {
+    line-height: rem-calc(22px);
+  }
+
+  .tiles__cta {
+    position: static;
+    padding-left: 0;
+  }
+
+  @include breakpoint(large) {
+    .tiles__cta {
+      position: absolute;
+      padding-left: rem-calc(25px);
+    }
+  }
+}
+
+.tiles--events, .tiles--projects {
+  @include breakpoint(large) {
+    height: rem-calc(450px);
+  }
+}
+
+.tiles--resources {
+  @include breakpoint(large) {
+    height: rem-calc(280px);
+  }
+}
+
+.tiles--projects {
+  .tiles__metadata {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    .tiles__metadata {
+      display: block;
+    }
+  }
+
+  @include breakpoint(large) {
+    height: rem-calc(450px);
+  } 
 }

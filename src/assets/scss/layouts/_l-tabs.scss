@@ -74,3 +74,104 @@
     }
   }
 }
+
+
+.l-tabs--pill {  
+  font-family: $font-heavy;
+  font-size: 26px;
+  text-transform: uppercase;
+  margin: 50px auto;
+  position: relative;
+  height: 120px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  white-space: nowrap;
+
+  > ul {
+    @include clearfix();
+    position: static;
+    height: auto;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  li {
+    border: 1px solid #A1A1A1;
+    background: #DADADA;
+    display: inline-block;
+    margin: 0;
+    line-height: 92px;
+    height: 92px;
+    text-align: center;
+
+    &.slick-active, &:active {
+      background: $cyber-green;
+      border-color: $cyber-green;
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 14px 25px 0 25px;
+        border-color: $cyber-green transparent transparent transparent;
+        position: absolute;
+        bottom: -13px;
+        left: 50%;
+        margin-left: -25px;
+      }
+    }
+
+    a {
+      color: $body-font-color;
+      display: block;
+      padding: 0 40px;
+    }
+  }
+
+  &.l-tabs--pill__justified {
+    width: 100%;
+    li {
+      display: table-cell;
+      width: 1%;
+    }
+  }
+
+  &.slick-custompaging {
+    .slick-list {
+      overflow: initial;
+    }
+
+    .slick-dots {
+      position: static;
+    }
+
+    .mCSB_scrollTools_horizontal {
+      a {
+        background: none;
+        
+        &:before, &:after {
+          color: #000;
+          font-family: 'cyberview';
+          margin-top: -18.5px;
+          position: absolute;
+          top: 50%;
+        }
+
+        &.mCSB_buttonLeft {
+          &:before {
+            content: $icon-chevron-small-left;
+          }
+        }
+
+        &.mCSB_buttonRight {
+          &:before {
+            content: $icon-chevron-small-right;
+          }
+        }
+      }
+    }
+  }
+}

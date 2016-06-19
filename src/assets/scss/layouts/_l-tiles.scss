@@ -163,4 +163,19 @@
       background-color: #606060;
     }
   }
+
+  &.l-tiles--plain-novariance {
+    > [class^="content-box"],
+    > [class*="content-box"] {
+      > .columns:nth-child(odd), > .columns:nth-child(even) {
+        .tiles--plain {
+          background: #E0E0E0;
+
+          * {
+            color: $body-font-color;
+          }
+        }
+      }
+    }
+  }
 }

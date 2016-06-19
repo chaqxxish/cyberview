@@ -21,3 +21,11 @@
   display: block;
   margin: 0 auto;
 }
+
+a {
+  &.link-text {
+    color: inherit;
+    font-family: $font-bold;
+    text-decoration: underline;
+  }
+}

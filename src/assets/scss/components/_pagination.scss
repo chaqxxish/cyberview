@@ -1,0 +1,53 @@
+.pagination {
+  li {
+    font-size: 26px;
+    font-family: $font-heavy;
+    position: relative;
+
+    &.disabled .icon {
+      color: #e6e6e6;
+    }
+
+    a {
+      color: #838383;
+
+      &:hover {
+        background: transparent;
+        color: #000;
+
+        .icon {
+          color: #000;
+        }
+      }
+    }
+
+    &.current {
+      background-color: transparent;
+      color: #000;
+    }
+
+    .icon {
+      color: $cyber-green;
+      font-size: 36px;
+      margin-top: -18px;
+      position: absolute;
+      top: 50%;
+    }
+
+    &.pagination-previous .icon {
+      left: -40px;
+    }
+
+    &.pagination-next .icon {
+      right: -40px;
+    }
+
+    &.pagination-previous:before, &.pagination-next:after {
+      content: '';
+    }
+
+    &.pagination-previous a:before, &.pagination-next a:after {
+      content: '';
+    }
+  }
+}

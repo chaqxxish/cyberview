@@ -52,7 +52,7 @@
 @import 'plugins/slick-theme';
 @import 'plugins/remodal';
 @import 'plugins/remodal-theme';
-@import 'plugins/perfect-scrollbar';
+@import 'plugins/jquery.mCustomScrollbar.min';
 
 @import 'fonts';
 @import 'icon';
@@ -72,6 +72,8 @@
 @import 'components/news';
 @import 'components/share';
 @import 'components/toggle';
+@import 'components/pagination';
+@import 'components/selectbox';
 @import 'layouts/l-global';
 @import 'layouts/l-header';
 @import 'layouts/l-footer';

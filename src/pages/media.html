@@ -1,0 +1,109 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': true,
+  'imgSrc': '/assets/img/banner-event.jpg',
+  'preheader': 'Media',
+  'header': 'Scoop of<br/>The Capital',
+  'content': '<p>Check out the latest buzz on Cyberview!</p>'
+}
+
+event: [{
+  'title':  'Smart traffic lights on Cyberjaya streets',
+  'description': 'Cyberview Sdn Bhd has secured a Smart City Catalyst funding from the Multimedia Development Corporation (MDeC) to implement a Smart Traffic Management System, or more commonly known as Smart Traffic Lights, in Cyberjaya.',
+  'author': 'The Star'
+},
+{
+  'title':  'Lahir warga muda celik teknologi digital',
+  'description': 'Sebagai satu inisiatif untuk memberi inspirasi dan minat kepada generasi muda dalam pengaturcaraan dan teknologi maklumat, Cyberview Sdn Bhd (Cyberview), bersama-sama dengan Terato Tech menjalinkan kerjasama dengan Microsoft untuk memperkenalkan kepada dunia program berkaitan pengaturcaraan melalui permainan popular dalam talian Minecraft.',
+  'author': 'Harian Metro'
+},
+{ 
+  'title':  "Cyberjaya's road towards global technology hub",
+  "description": "The accomplishment thus far achieved by Cyberjaya is impressive. Enabling this is Cyberview Sdn Bhd, the Technology Hub Enabler for the city.",
+  'author': 'The Malaysian Reserve'
+}]
+
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <div class="selectbox--filter">
+        <label>Show Only
+          <select>
+            <option value="all">All Year</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content-box--one">
+  <div class="l-tiles--plain l-tiles--plain-novariance">
+    <div class="content-box--one">
+      {{#each event}}
+      <div class="columns">
+        <a href="#">
+          <div class="tiles--plain">
+            <div class="tiles__content">
+              <span class="tiles__headline">{{title}}</span>
+              <p>{{description}}</p>
+
+              <ul class="media--info">
+                <li>
+                  <div class="media-object">
+                    <div class="media-object-section middle">
+                      <i class="icon2-paper"></i>
+                    </div>
+                    <div class="media-object-section">
+                      {{author}}
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media-object">
+                    <div class="media-object-section middle">
+                      <i class="icon2-calendar"></i>
+                    </div>
+                    <div class="media-object-section">
+                      Apr 26, 2016 - Apr 27, 2016
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+<section class="l-section">
+  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    <li class="pagination-previous disabled">
+      <i class="icon-chevron-thin-left"></i>
+      <span class="show-for-sr">Previous</span>
+    </li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next">
+      <a href="#" aria-label="Next page">
+        <i class="icon-chevron-thin-right"></i>
+        <span class="show-for-sr">Next</span>
+      </a>
+    </li>
+  </ul>
+</section>

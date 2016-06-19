@@ -66,6 +66,10 @@
     width: 145px;
   }
 
+  .figure-icon__content.figure-icon__wide img {
+    width: 500px;
+  }
+
   .figure-icon__content:first-child,
   .figure-icon__content:last-child {
     @include flex-grid-column(12);
@@ -94,6 +98,15 @@
 
     .figure-icon__content:last-child {
       @include flex-grid-column(null);
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .figure-icon__wide:first-child {
+      margin-right: 25px;
+    }
+
+    .figure-icon__wide:first-child.figure-icon__wide:first-child {
       padding-right: 0;
       padding-left: 0;
     }

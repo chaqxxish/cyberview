@@ -1,0 +1,114 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': true,
+  'imgSrc': '/assets/img/banner-event.jpg',
+  'preheader': 'Resources',
+  'header': 'Get Down<br/>with the Facts',
+  'content': '<p>Want to know more? Dive into our library and find all the information you need!</p>'
+}
+
+event: [{
+  'category':  'Brochures',
+  'title':  'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem repellendus temporibus quis unde labore expedita aliquid, quo reiciendis reprehenderit!'
+},
+{
+  'category':  'Others',
+  'title':  'Maiores iste ullam, et saepe assumenda ',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus porro sint est nam explicabo nobis ipsa reiciendis quidem. Labore in officiis reprehenderit. Vero nam porro excepturi! Quod delectus culpa odit.'
+},
+{ 
+  'category':  'Blueprint',
+  'title':  'Maiores iste ullam, et saepe assumenda id velit consequuntur fugit at voluptatem',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus porro sint est nam explicabo nobis ipsa reiciendis quidem. Labore in officiis reprehenderit. Vero nam porro excepturi! Quod delectus culpa odit.'
+},
+{
+  'category':  'Forms',
+  'title':  'Maiores iste ullam, et saepe assumenda ',
+  'description': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus porro sint est nam explicabo nobis ipsa reiciendis quidem. Labore in officiis reprehenderit. Vero nam porro excepturi! Quod delectus culpa odit.'
+},]
+
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="l-tabs">
+    <div class="content-box--one">
+      <div class="columns">
+        <ul class="tabs">
+          <li class="tabs-title is-active"><a href="events.html" aria-selected="true">Downloads</a></li>
+          <li class="tabs-title"><a href="#">Videos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <div class="selectbox--filter">
+        <label>Show Only
+          <select>
+            <option value="all">All Downloads</option>
+            <option value="Brochures">Brochures</option>
+            <option value="Blueprint">Blueprint</option>
+            <option value="Forms">Forms</option>
+            <option value="Others">Others</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content-box--one">
+  <div class="l-tiles--plain l-tiles--plain-novariance" data-equalizer>
+    <div class="content-box--two">
+      {{#each event}}
+      <div class="columns {{category}}" data-equalizer-watch>
+        <a href="#">
+          <div class="tiles--plain tiles--resources">
+            <div class="tiles__content">
+              <span class="label">{{category}}</span>
+              <span class="tiles__headline tiles__headline--small">{{title}}</span>
+              <p>{{description}}</p>
+
+              <span class="tiles__cta">
+                <i class="icon2 icon2-download"></i>
+                Download PDF, 1023.4 KB
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+<section class="l-section">
+  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    <li class="pagination-previous disabled">
+      <span class="icon icon-chevron-thin-left"></span>
+      <span class="show-for-sr">Previous</span>
+    </li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next">
+      <a href="#" aria-label="Next page">
+        <span class="icon icon-chevron-thin-right"></span>
+        <span class="show-for-sr">Next</span>
+      </a>
+    </li>
+  </ul>
+</section>

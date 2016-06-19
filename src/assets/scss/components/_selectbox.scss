@@ -1,0 +1,28 @@
+.selectbox--filter {
+  font-family: $font-heavy;
+  position: relative;
+
+  label {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+      border-left: $input-border;
+      content: $icon-chevron-thin-down;
+      color: $cyber-green;
+      font-family: 'cyberview';
+      padding: 10px 15px 3px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  select {
+    background: #535353;
+    color: #FFF;
+    font-family: $font-heavy;
+    margin-left: 10px;
+    width: 300px;
+  }
+}

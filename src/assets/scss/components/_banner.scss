@@ -6,6 +6,32 @@
 
 .l-banner--page {
   background-color: #000;
+
+  &.no-image {
+    background: #252525;
+
+    .banner--page {
+      .banner__content__header {
+        height: auto;
+      }
+
+      .banner__content {
+        max-width: none;
+      }
+
+      .header-box--social {
+        height: auto;
+        position: static;
+        padding-left: 0;
+      }
+
+      .share {
+        @include breakpoint(large) {
+          top: 1rem;
+        }
+      }
+    } 
+  }
 }
 
 .l-banner__description {

@@ -1,0 +1,122 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': true,
+  'imgSrc': '/assets/img/banner-event.jpg',
+  'preheader': 'Projects',
+  'header': 'Architecture of a<br>Global Tech Hub',
+  'content': '<p>Browse through our property gallery and take a tour of our city.</p>'
+}
+
+projects: [{
+  'category': 'Community',
+  'title': 'Cyberjaya Mosque'
+},
+{
+  'category': 'Business',
+  'title': 'SME Technopreneur Centre 3'
+},
+{ 
+  'category': 'Business',
+  'title': 'Cyberview 10: KRU Studios'
+},
+{ 
+  'category': 'Community',
+  'title': 'Housing Development on Block 20'
+},
+{ 
+  'category': 'Business',
+  'title': 'Cyberview 12'
+},
+{ 
+  'category': 'Business',
+  'title': 'Cyberview 12A'
+}]
+
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="l-tabs">
+    <div class="content-box--one">
+      <div class="columns">
+        <p>
+          As the saying goes, the proof is in the pudding, or in our case, the buildings! We have an array of properties with world class architecture and infrastructure that takes into account the surrounding natural environment's wellbeing.
+        </p>
+        <p>
+          Take a look at our gallery and see for yourselves why we are the experts of building and managing a Global Tech Hub.
+        </p>
+        <ul class="tabs">
+          <li class="tabs-title is-active"><a href="events.html" aria-selected="true">Completed</a></li>
+          <li class="tabs-title"><a href="#">Upcoming</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <div class="selectbox--filter">
+        <label>Show Only
+          <select>
+            <option value="all">All Projects</option>
+            <option value=".Community">Community</option>
+            <option value=".Business">Business</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="content-box--one">
+  <div class="l-tiles">
+    <div class="content-box--two">
+      {{#each projects}}
+        <div class="columns {{category}}">
+          <div class="tiles--small tiles--projects">
+            <img src="http://placehold.it/570x450">
+            <div class="tiles__content">
+              <span class="label">{{category}}</span>
+              <span class="tiles__headline">{{title}}</span>
+
+              <div class="tiles__description">
+                <p>Date completed: <strong>26 Feb 05</strong></p>
+                <p>Land Area: <strong>7.97 acres</strong></p>
+                <p>Gross Floor Plan: <strong>179,643 sq. ft.</strong></p>
+                <p>Lot No.: <strong>PT 12068</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+
+<section class="l-section">
+  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    <li class="pagination-previous disabled">
+      <span class="icon icon-chevron-thin-left"></span>
+      <span class="show-for-sr">Previous</span>
+    </li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next">
+      <a href="#" aria-label="Next page">
+        <span class="icon icon-chevron-thin-right"></span>
+        <span class="show-for-sr">Next</span>
+      </a>
+    </li>
+  </ul>
+</section>

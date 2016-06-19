@@ -21,6 +21,7 @@ var PATHS = {
   assets: [
     'src/assets/**/*',
     'bower_components/slick-carousel/slick/{fonts/**/*,ajax-loader.gif}',
+    'bower_components/malihu-custom-scrollbar-plugin/mCSB_buttons.png',
     '!src/assets/{img,js,scss}/**/*'
   ],
   sass: [
@@ -31,10 +32,12 @@ var PATHS = {
   javascript: [
     // External plugins
     'bower_components/jquery/dist/jquery.js',
+    'bower_components/jquery-mousewheel/jquery-mousewheel.min.js',
+    'bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js',
     'bower_components/what-input/what-input.js',
     'bower_components/slick-carousel/slick/slick.js',
     'bower_components/remodal/dist/remodal.js',
-    'bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js',
+    'bower_components/jquery.simplemarquee/lib/jquery.simplemarquee.js',
     // Foundation core JS
     'bower_components/foundation-sites/js/foundation.core.js',
     'bower_components/foundation-sites/js/foundation.util.*.js',

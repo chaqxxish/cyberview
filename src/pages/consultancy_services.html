@@ -1,0 +1,79 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': false,
+  'imgSrc': '/assets/img/banner-event.jpg',
+  'preheader': 'Consultancy Services',
+  'header': "An Insider's<br/>Perspective",
+  'content': '<p>Enjoy our range of services that include consultancy services for government and technology park managers to find ways of creating socio-economic wealth.</p>'
+}
+
+green-infrastructure: ['Assessment Stage', 'Development Stage', 'Enrichment Stage', 'Assessment Stage', 'Development Stage', 'Enrichment Stage']
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <p>
+        Be it with property developers, local authorities, or contractors; our consultancy service allows clients to have one main liaison to see their projects evolve from blueprint to a successful end, with certainty, expertise and very little hassle.
+        <br>
+        Divided in three main stages, the consultancy we offer depends on the readiness of your location.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <div class="content-box--one">
+        <div class="columns">
+          <div class="l-tabs">
+            <div class="l-tabs--pill slick-custompaging"></div>
+          </div>
+
+          <div class="ts-slider">
+          {{#each green-infrastructure}}
+            <div class="carousel__list" data-paging="{{this}}">
+              <div class="figure-icon--carousel">
+                <div class="figure-icon__content figure-icon__wide">
+                    <img src="http://placehold.it/500x338" />
+                </div>
+                <div class="figure-icon__content">
+                    <h4>{{this}}</h4>
+                    <p>
+                      <strong>Stage 1 : Getting Started</strong>
+                    </p>
+                    <p>
+                      So you are about to get started? We're here to help. Our services at this stage focus on situational assessment to produce the recommendation components be it physical or soft infrastructure.
+                    </p>
+                    <ol>
+                      <li>Market study & site assessment</li>
+                      <li>Data analytics and deduction</li>
+                      <li>Fixing priorities</li>
+                      <li>Due diligence & feasibility study</li>
+                      <li>Project budgeting</li>
+                    </ol>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="l-section bg-grey">
+  <div class="content-box--one">
+    <div class="columns text-center">
+      Need to know more? Drop us a line!
+      <a href="#" class="button">Contact Us</a>
+    </div>
+  </div>
+</section>

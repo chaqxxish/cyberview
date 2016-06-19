@@ -1,0 +1,230 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': true,
+  'imgSrc': '/assets/img/banner-event.jpg',
+  'preheader': 'Cyberjaya Township Services',
+  'header': 'Managing The<br/>Capital that Delivers ',
+  'content': '<p>Being a home to 800 tech companies and more than 38,000 knowledge workers, we take pride in managing The Capital that is thriving with work and activities. It is our duty to make sure everything runs efficiently and liveability is at an optimal level.</p>'
+}
+
+township: ['Connectivity', 'Transportation', 'Smart City']
+
+sports: ['Lake Garden', 'Mini Stadium', 'Connectivity', 'Transportation', 'Smart City', 'Mosque Building', 'Recycling Centre', 'Solar Panels', 'Compostech Machines']
+
+green-infrastructure: ['Mosque Building', 'Recycling Centre', 'Solar Panels', "Compostech Machines"]
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <p>
+        This among others is what makes Cyberjaya a strong Global Tech Hub.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <div class="l-icons--four">
+    <div class="content-box">
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            Cybercity Manager
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            Green Township
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            Smart City Solutions
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            Free Wifi
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            Work – Life Integration
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            24/7 Bus Service
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            Bicycle Lane
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="figure-icon--vertical">
+          <div class="figure-icon__content">
+            <img src="http://placehold.it/145x145">
+          </div>
+          <div class="figure-icon__content">
+            Park & Ride
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="l-section bg-grey">
+  <div class="content-box--one">
+    <div class="columns">
+      <h2>Township Management</h2>
+      <p>
+        As a recognition of our effort in driving investments into Cyberjaya and assisting the investors and stakeholders, we were appointed the Cybercity Manager for Cyberjaya by the Ministry of Science and Technology (MOSTI) in 2011. As the Cybercity Manager, we were mandated to be the main reference point for the stakeholders. Whether you’ve been here for a while or just moving in, talk to us for any Cyberjaya-specific information, updates, business matching and opportunities that The Capital has to offer.
+      </p>
+
+      <div class="content-box--one">
+        <div class="columns">
+
+          <div class="l-tabs">
+            <div class="l-tabs--pill slick-custompaging"></div>
+          </div>
+          <div class="ts-slider">
+            {{#each township}}
+            <div class="carousel__list" data-paging="{{this}}">
+              <div class="figure-icon--carousel">
+                <div class="figure-icon__content">
+                    <img src="http://placehold.it/500x338" />
+                </div>
+                <div class="figure-icon__content">
+                    <h4>{{this}}</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestias iusto molestiae similique eos. Rem debitis aliquid adipisci labore, consequatur harum, quas voluptatum dolore laboriosam, fuga eveniet perferendis obcaecati molestiae?</p>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <h2>Sports & Recreation</h2>
+      <p>
+        There's nothing better than breaking a sweat to unwind after a long day at work. Two well-known sports facilities for sports enthusiasts that we provide are the TSI Mini Stadium and Cyberjaya Lake Garden Community Club. 
+      </p>
+
+      <div class="content-box--one">
+        <div class="columns">
+          <div class="l-tabs">
+            <div class="l-tabs--pill slick-custompaging"></div>
+          </div>
+          <div class="ts-slider"">
+            {{#each sports}}
+            <div class="carousel__list" data-paging="{{this}}">
+              <div class="figure-icon--carousel">
+                <div class="figure-icon__content">
+                    <img src="http://placehold.it/500x338" />
+                </div>
+                <div class="figure-icon__content">
+                    <h4>{{this}}</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestias iusto molestiae similique eos. Rem debitis aliquid adipisci labore, consequatur harum, quas voluptatum dolore laboriosam, fuga eveniet perferendis obcaecati molestiae?</p>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <h2>Green Infrastructure</h2>
+      <p>
+        As a pioneer of Malaysia’s green township, we are all about sustainability. Every projects undertaken took the environment into consideration.
+      </p>
+
+      <div class="content-box--one">
+        <div class="columns">
+          <div class="l-tabs">
+            <div class="l-tabs--pill slick-custompaging"></div>
+          </div>
+          <div class="ts-slider">
+          {{#each green-infrastructure}}
+            <div class="carousel__list" data-paging="{{this}}">
+              <div class="figure-icon--carousel">
+                <div class="figure-icon__content">
+                    <img src="http://placehold.it/500x338" />
+                </div>
+                <div class="figure-icon__content">
+                    <h4>{{this}}</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet molestias iusto molestiae similique eos. Rem debitis aliquid adipisci labore, consequatur harum, quas voluptatum dolore laboriosam, fuga eveniet perferendis obcaecati molestiae?</p>
+                </div>
+              </div>
+            </div>
+          {{/each}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="l-section bg-grey">
+  <div class="content-box--one">
+    <div class="columns text-center">
+      Need to know more? Drop us a line!
+      <a href="#" class="button">Contact Us</a>
+    </div>
+  </div>
+</section>

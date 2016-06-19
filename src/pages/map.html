@@ -1,0 +1,44 @@
+<div id="embed-map" style="height: 600px; width: 100%; display: block;"></div>
+
+<script>
+function initMap() {
+  var myLatLng = {lat: 2.9259261, lng: 101.644267};
+
+  // Create a map object and specify the DOM element for display.
+  var map = new google.maps.Map(document.getElementById('embed-map'), {
+    center: myLatLng,
+    scrollwheel: false,
+    zoom: 14
+  });
+
+  // Marker location
+  var locations = [
+      ['Cyberview Sdn Bhd', 2.908291,101.6536153, 17],
+      ['Shaftsbury Square', 2.9233686,101.6589618, 17],
+      ['Multimedia University', 2.9276384,101.639869, 17],
+      ['Saba\' Restaurant', 2.9229885,101.6491369,17],
+      ['Street Mall', 2.92115,101.6485643,17]
+    ];
+
+  var infowindow = new google.maps.InfoWindow();
+
+  var marker, i;
+
+  // Create markers and set position.
+  for (i = 0; i < locations.length; i++) {  
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map
+    });
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      return function() {
+        infowindow.setContent(locations[i][0]);
+        infowindow.open(map, marker);
+      }
+    })(marker, i));
+  }
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh7S86zm4mzoQiKUfCdkul-87yzRzs20I&callback=initMap" async defer></script>

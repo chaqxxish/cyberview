@@ -1,0 +1,603 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="http://url.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Title here" />
+    <meta property="og:description" content="Description here" />
+    <meta property="og:image" content="http://imgurl.com" />
+    <title>Title here</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '993161007428706',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+    
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+    
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
+    
+
+    <header>
+      <div class="l-header">
+        <!-- Logo column -->
+        <div class="l-header__logo">
+          <a href="#"><img class="img-logo" src="./assets/img/img-logo-tagline.png"></a>
+        </div>
+    
+        <!-- Menu column -->
+        <div class="l-header__menu">
+          <nav class="nav--main">
+            <!-- First-level nav -->
+            <ul class="nav-first">
+              <!-- About -->
+              <li>
+                <a class="nav__link first-level" href="our_story.html">About</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>About</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="our_story.html">Our Story</a></li>
+                        <li><a class="nav__link second-level" href="management.html">Management</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Invest -->
+              <li>
+                <a class="nav__link first-level" href="invest_in_cyberjaya.html">Invest</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Invest</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="invest_in_cyberjaya.html">Invest in Cyberjaya</a></li>
+                        <li><a class="nav__link second-level" href="ecosystem.html">Cyberjaya Ecosystem</a></li>
+                        <li><a class="nav__link second-level" href="invest_relation_service.html">Our Investor Relations services</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Industry -->
+              <li>
+                <a class="nav__link first-level" href="programmes.html">Industry</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Industry</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li>
+                          <a class="nav__link second-level" href="livinglab_overview.html">Cyberview Living Lab</a>
+                          <!-- Third-level nav -->
+                          <ul class="nav-third">
+                            <li><a class="nav__link" href="talent.html">Talent</a></li>
+                            <li><a class="nav__link" href="livinglab_accelerator.html">Accelerator</a></li>
+                            <li><a class="nav__link" href="pilot.html">Pilot</a></li>
+                            <li><a class="nav__link" href="enterprise.html">Enterprise</a></li>
+                            <li><a class="nav__link" href="success_stories.html">Success Stories</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="nav__link second-level" href="privatepublic.html">Public - Private Collaboration</a></li>
+                        <li>
+                          <a class="nav__link second-level" href="smartcity.html">Smartcity</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Tech Hub Services -->
+              <li>
+                <a class="nav__link first-level" href="#">Tech Hub Services</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Tech Hub Services</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="#">Overview</a></li>
+                        <li>
+                          <a class="nav__link second-level" href="#">Services</a>
+                          <!-- Third-level nav -->
+                          <ul class="nav-third">
+                            <li><a class="nav__link" href="consultancy_services.html">Consultancy Services</a></li>
+                            <li><a class="nav__link" href="township_service.html">Cyberjaya Township Services</a></li>
+                          </ul>
+                        </li>
+                        <li><a class="nav__link second-level" href="projects.html">Projects</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Events & Media -->
+              <li>
+                <a class="nav__link first-level" href="#">Events &amp; Media</a>
+                <!-- Dropdown container -->
+                <div class="l-header__dropdown">
+                  <div class="l-header__wrapper">
+                    <div class="l-header__info">
+                      <h5>Events &amp; Media</h5>
+                    </div>
+                    <div class="l-header__submenu">
+                      <!-- Second-level nav -->
+                      <ul class="nav-second">
+                        <li><a class="nav__link second-level" href="events.html">Events</a></li>
+                        <li><a class="nav__link second-level" href="media.html">Media</a></li>
+                        <li><a class="nav__link second-level" href="resources.html">Resources</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+    
+              <!-- Contact Us -->
+              <li><a class="nav__link first-level" href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+    
+          <!-- Mobile navi will go here -->
+          <nav class="nav--mobile">
+            <ul class="vertical menu" data-accordion-menu data-multi-open="false">
+              <li>
+                <a class="nav__link" href="#">About</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Our Story</a></li>
+                  <li><a class="nav__link" href="#">Management</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Invest</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Invest in Cyberjaya</a></li>
+                  <li><a class="nav__link" href="#">Cyberjaya Ecosystem</a></li>
+                  <li><a class="nav__link" href="#">Our Investor Relations Services</a></li>
+                </ul>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Industry</a>
+                <ul class="menu vertical nested">
+                  <li><a class="nav__link" href="#">Overview</a></li>
+                  <li>
+                    <a class="nav__link" href="#">Living Lab</a>
+                    <ul class="menu vertical nested">
+                      <li><a class="nav__link" href="#">Living Lab Accelerator</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Enterprise</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Pilot</a></li>
+                      <li><a class="nav__link" href="#">Living Lab Talent</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="nav__link" href="#">Public - Private Collaboration</a></li>
+                  <li>
+                    <a class="nav__link" href="#">Smartcity</a>
+                    <ul class="menu vertical nested">
+                      <li><a class="nav__link" href="#">Link</a></li>
+                      <li><a class="nav__link" href="#">Projects</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a class="nav__link" href="#">Tech Hub Services</a></li>
+              <li><a class="nav__link" href="#">Events &amp; Media</a></li>
+              <li><a class="nav__link" href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+    
+        <!-- Hamburger buttton -->
+        <div class="l-header__hamburger">
+          <button class="button-menu" type="button"><i class="icon-menu"></i></button>
+        </div>
+    
+        <!-- Search column -->
+        <div class="l-header__search">
+          <button class="button-search"><i class="icon-search"></i></button>
+        </div>
+      </div>
+    </header>
+    
+
+    
+    <div class="l-banner--page">
+      <div class="banner--page banner-inverted">
+        <div class="banner__content">
+          <div class="banner__content__header">
+            <div class="header-box--social">
+              <p class="header-box__prehead">About</p>
+              <h2 class="txt-green">Home Of Urban <br/>Innovation</h2>
+            </div>
+          </div>
+    
+          <div class="banner__content__description"><p>To elevate Cyberjaya into a Global Tech Hub , a conducive ecosystem is required for technological creativity.  One of the Special Projects and an important focus area under the Global Tech Hub of Cyberjaya is the Smart City initiative.</p></div>
+        </div>
+    
+        <div class="banner__image">
+          <img src="http://placehold.it/840x570">
+        </div>
+    
+        <div class="share">
+          <button class="share__toggle"><i class="icon-share"></i></button>
+          <a href="javascript:void(0);" class="share__facebook mui-enter"><i class="icon-facebook"></i></a>
+          <a href="javascript:void(0);" class="share__twitter mui-enter"><i class="icon-twitter"></i></a>
+          <a href="javascript:void(0);" class="share__email mui-enter"><i class="icon-email"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <section class="l-section">
+      <div class="content-box--overflow is-inverted">
+        <div class="columns _left"><img src="http://placehold.it/640x320"></div>
+        <div class="columns _right">
+          <h2>Low Carbon City</h2>
+          <p>Cyberjaya is envisioned to be a city which adopts intelligent technologies to promote more efficient public service and city living, higher quality of life within a safe city, and greater sustainability for the environment, in line with Cyberjaya’s Low Carbon City Framework.</p>
+    
+          <p>After all, Cyberjaya was declared pioneer Green City of Malaysia under the 10th MP, and Cyberjaya is the 1st Low Carbon City in Malaysia.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="l-section">
+      <div class="content-box--overflow">
+        <div class="columns _left">
+          <h2>Smart Technology</h2>
+          <p>Synergising with the Living Lab initiative, Cyberjaya as a Smart City becomes a test bed for new technologies in the Global Tech Hub technology focus areas such as Wearable Technology, Internet of Things, Green Technology, Mobile Internet and others.</p>
+        </div>
+        <div class="columns _right"><img src="http://placehold.it/640x320"></div>
+      </div>
+    </section>
+    
+    <section class="l-section bg-grey">
+      <div class="content-box--one">
+        <div class="columns">
+          <h2>Smart City Framework</h2>
+          <h6>The Building Blocks of Smart Living</h6>
+          <p>A liveable city is more than just an address – it’s a place where people can work and live life to the fullest. In order to bring the Smart City vision to life, infrastructure and application project collaborations have been created to enable its implementation.</p>
+    
+          <p>Under the Cyberjaya Smart City Framework, the Smart City Solutions have been defined across 4 categories: Environment, Infrastructure, Economy and Social.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="l-section bg-grey">
+      <div class="l-tabs">
+        <div class="content-box--one">
+          <div class="columns">
+            <ul class="tabs" data-tabs id="tabs-smartcity">
+              <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Environment</a></li>
+              <li class="tabs-title"><a href="#panel2">Infrastructure</a></li>
+              <li class="tabs-title"><a href="#panel3">Economy</a></li>
+              <li class="tabs-title"><a href="#panel4">Social</a></li>
+            </ul>
+    
+            <div class="tabs-content" data-tabs-content="tabs-smartcity">
+              <div class="tabs-panel is-active" id="panel1">
+                <div class="content-box--seventh align-middle is-inverted">
+                  <div class="columns _left">
+                    <img class="align-center" src= "http://placehold.it/475x240">
+                  </div>
+    
+                  <div class="columns _right">
+                    <h6>Improving efficiency and quality of infrastructure in Cyberjaya</h6>
+                    <p>Smart Environment focuses on two sub-categories: Resources/ Energy; and Mobility which are used to improve efficiency of energy and resources usage, and intelligent solutions to improve transportation efficiency.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="tabs-panel" id="panel2">
+                <div class="content-box--seventh align-middle is-inverted">
+                  <div class="columns _left">
+                    <img class="align-center" src= "http://placehold.it/475x240">
+                  </div>
+    
+                  <div class="columns _right">
+                    <h6>Infrastructure</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rutrum faucibus nibh, eget pellentesque diam egestas at. Donec vitae dui tincidunt, elementum orci vitae, maximus metus. Nullam nec nisl turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="tabs-panel" id="panel3">
+                <div class="content-box--seventh align-middle is-inverted">
+                  <div class="columns _left">
+                    <img class="align-center" src= "http://placehold.it/475x240">
+                  </div>
+    
+                  <div class="columns _right">
+                    <h6>Economy</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rutrum faucibus nibh, eget pellentesque diam egestas at. Donec vitae dui tincidunt, elementum orci vitae, maximus metus. Nullam nec nisl turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="tabs-panel" id="panel4">
+                <div class="content-box--seventh align-middle is-inverted">
+                  <div class="columns _left">
+                    <img class="align-center" src= "http://placehold.it/475x240">
+                  </div>
+    
+                  <div class="columns _right">
+                    <h6>Social</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur rutrum faucibus nibh, eget pellentesque diam egestas at. Donec vitae dui tincidunt, elementum orci vitae, maximus metus. Nullam nec nisl turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="l-section">
+      <div class="l-process">
+        <div class="content-box">
+          <div class="columns">
+            <div class="process">
+              <div class="process__headline">
+                <sup>Phase</sup>
+                <span class="stat">01</span>
+              </div>
+              <div class="process__description">
+                Introduction of smart city foundation (2015)
+              </div>
+            </div>
+          </div>
+    
+          <div class="columns">
+            <div class="process">
+              <div class="process__headline">
+                <sup>Phase</sup>
+                <span class="stat">02</span>
+              </div>
+              <div class="process__description">
+                Promoting consumption of smart city solutions (2016)
+              </div>
+            </div>
+          </div>
+    
+          <div class="columns">
+            <div class="process">
+              <div class="process__headline">
+                <sup>Phase</sup>
+                <span class="stat">03</span>
+              </div>
+              <div class="process__description">
+                Integrating solutions for control and monitoring (2017-2018)
+              </div>
+            </div>
+          </div>
+    
+          <div class="columns">
+            <div class="process">
+              <div class="process__headline">
+                <sup>Phase</sup>
+                <span class="stat">04</span>
+              </div>
+              <div class="process__description">
+                Promoting widespread access and adoption (2019-2020)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="l-section">
+      <div class="content-box--overflow">
+        <div class="columns _left">
+          <h2>When Our Powers Combine</h2>
+          <p>How are we building the Smart City? Through Smart Collaboration.<br/>
+          Interoperability allows sharing of information which facilitates product innovation and co-production of urban services. This contributes to the liveability of Cyberjaya, promotes sustainable economic growth and helps develop new markets.</p>
+    
+          <h6>Let’s Join Forces!</h6>
+          <p>We are keen to work closely with partners, residents and visitors of Cyberjaya to develop ideas and solutions aimed at improving the liveability of the city. We are looking for companies searching for a place to test their innovative technologies or willing to co-invest and collaborate, entities that will add visible value to Cyberjaya, and we welcome solutions that can be integrated into a common open platform.</p>
+        </div>
+        <div class="columns _right"><img src="http://placehold.it/640x320"></div>
+      </div>
+    </section>
+    
+    <section class="l-section">
+      <div class="content-box--one">
+        <div class="columns">
+          <h2>What’s in it for everyone?</h2>
+          <p>As our partners, you will benefit from creation of new and innovative products, co-production and optimization of urban services. Our Living Lab initiative enables you to use Cyberjaya as a test bed for your new technologies, that you can then launch into a broader ASEAN market. Leverage on our strong links to the Malaysian government and grab the opportunity to work with our partners like TM on brownfield and Greenfield projects.</p>
+    
+          <p>Ultimately, our collaboration is working toward a greater cause for the public by solving existing problems and creating more business opportunities through sharing of data and collaboration.</p>
+    
+          <p>So if you have a great idea and are ready to make history – let’s team up to transform Cyberjaya into a Global Tech Hub; the city of the future.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="l-section">
+      <div class="content-box--one">
+        <div class="columns text-center">
+          <a href="livinglab_overview.html" class="button">LET'S DEVELOP A SMART CITY</a>
+          <a href="contact-3.html" class="button">LET'S COLABORATE</a>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="l-footer">
+      <div class="row">
+        <div class="l-footer__sitemap small-12 large-6 columns show-for-medium">
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">About Cyberview</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Who is Cyberview</a></li>
+                <li><a class="nav__link" href="#">Our Management</a></li>
+                <li><a class="nav__link" href="#">Apply for jobs</a></li>
+                <li><a class="nav__link" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">Our Services</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Investor Services</a></li>
+                <li><a class="nav__link" href="#">Events and Programmes</a></li>
+                <li><a class="nav__link" href="#">Tech Hub Consultancy</a></li>
+                <li><a class="nav__link" href="#">Office Space</a></li>
+                <li><a class="nav__link" href="#">Smart City</a></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns">
+              <h6 class="txt-green">Our Program</h6>
+              <ul class="nav--footer">
+                <li><a class="nav__link" href="#">Pilot Innovations </a></li>
+                <li><a class="nav__link" href="#">Enterprise Developement</a></li>
+                <li><a class="nav__link" href="#">Talent Programmes</a></li>
+                <li><a class="nav__link" href="#">Accelerator</a></li>
+                <li><a class="nav__link" href="#">Women Network</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
+        <div class="l-footer__contact small-12 medium-6 large-3 columns show-for-medium">
+          <h6 class="txt-green">Cyberview Contact</h6>
+          <ul class="nav--footer">
+            <li>
+              <address>
+                Block 3750 Persiaran APEC,<br>
+                Cyber 8, 63000 Cyberjaya,<br>
+                Selangor, Malaysia.
+              </address>
+            </li>
+            <li>
+              <a class="nav__link" href="tel:+60383156111">+603-8315 6111</a>
+            </li>
+            <li>
+              <a class="nav__link" href="tel:+60383156110">+603-8315 6110</a>
+            </li>
+            <li>
+              <a class="nav__link" href="mailto:ccm@cyberview.com.my"><span class="txt-underline">ccm@cyberview.com.my</span></a>
+            </li>
+          </ul>
+    
+          <h6><a class="txt-green" href="https://goo.gl/maps/moKoN628ZWF2" target="_blank">Get directions<i class="icon-chevron-small-right align-middle"></i></a></h6>
+    
+        </div>
+    
+        <div class="l-footer__social small-12 medium-6 large-3 columns">
+          <h6 class="txt-green">Share the good things</h6>
+          <ul class="nav--social">
+            <li><a class="nav__link" href="#"><i class="icon-twitter"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-facebook"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-youtube"></i></a></li>
+            <li><a class="nav__link" href="#"><i class="icon-instagram"></i></a></li>
+          </ul>
+    
+          <br/>
+    
+          <h6 class="txt-green">Get latest updates from Us</h6>
+          <p class="show-for-medium">Sign up to receive latest updates on programmes, events and more.</p>
+    
+          <form>
+            <div class="input-group">
+              <input class="input-group-field" type="email" placeholder="Your email address">
+              <div class="input-group-button">
+                <button type="submit" class="button"><i class="icon-chevron-thin-right"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+      <div class="l-footer__copyright">
+        <div class="row align-justify">
+          <div class="small-12 medium-expand columns">
+            <div class="media-object">
+              <div class="media-object-section middle show-for-medium">
+                <img class="img-logo" src="./assets/img/img-logo.png" />
+              </div>
+              <div class="media-object-section middle">
+                &copy; Copyright 2015 Cyberview Sdn Bhd (405553-T). All Rights Reserved.
+                <br/><small class="show-for-medium">This site is best viewed using Google Chrome 29++, Mozilla Firefox 24++, Safari 5++, Opera 15++ or IE 10++.</small>
+              </div>
+            </div>
+          </div>
+    
+          <div class="columns shrink show-for-medium">
+            <ul class="nav--copyright">
+              <li>
+                <a class="nav__link" href="#">Personal Data Protection</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Legal Policy</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="small-12 columns hide-for-medium text-center">
+            <ul class="nav--copyright--mobile">
+              <li>
+                <a class="nav__link" href="#">Sitemap</a>
+              </li>
+              <li>
+                <a class="nav__link" href="#">Legal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

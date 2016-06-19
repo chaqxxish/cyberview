@@ -1,4 +1,3 @@
-node_modules
-dist
-cyberview.sublime-project
-Handover
+node_modules/
+Handover/
+.sass-cache/

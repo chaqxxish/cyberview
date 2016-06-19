@@ -20,7 +20,8 @@
     "slick-carousel": "https://github.com/kenwheeler/slick.git#~1.5.9",
     "remodal": "https://github.com/VodkaBears/Remodal.git#^1.0.6",
     "install": "^1.0.4",
-    "perfect-scrollbar": "^0.6.10"
+    "jquery.simplemarquee": "^0.2.4",
+    "malihu-custom-scrollbar-plugin": "^3.1.4"
   },
   "private": true
 }
