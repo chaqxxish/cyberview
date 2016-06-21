@@ -62,65 +62,63 @@ event: [{
   </div>
 </section>
 
-<div class="content-box--one">
-  <div class="l-tiles--plain l-tiles--plain-novariance">
-    <div class="content-box--two">
-      {{#each event}}
-      <div class="columns {{category}}">
-        <a href="event_details.html">
-          <div class="tiles--plain tiles--events">
-            <div class="tiles__content">
-              <span class="label">{{category}}</span>
-              <span class="tiles__headline">{{title}}</span>
-              <p>{{description}}</p>
+<div class="l-tiles--plain l-tiles--plain-novariance">
+  <div class="content-box--two">
+    {{#each event}}
+    <div class="columns {{category}}">
+      <a href="event_details.html">
+        <div class="tiles--plain tiles--events">
+          <div class="tiles__content">
+            <span class="label">{{category}}</span>
+            <span class="tiles__headline">{{title}}</span>
+            <p>{{description}}</p>
 
-              <div class="tiles__metadata">
-                <div class="content-box--two">
-                  <div class="columns">
-                    <div class="media-object">
-                      <div class="media-object-section middle">
-                        <i class="icon2-calendar"></i>
-                      </div>
-                      <div class="media-object-section">
-                        Apr 26, 2016 - Apr 27, 2016
-                      </div>
+            <div class="tiles__metadata">
+              <div class="content-box--two">
+                <div class="columns">
+                  <div class="media-object">
+                    <div class="media-object-section middle">
+                      <i class="icon2-calendar"></i>
                     </div>
-                  </div>
-                  <div class="columns">
-                    <div class="media-object">
-                      <div class="media-object-section middle">
-                        <i class="icon2-clock"></i>
-                      </div>
-                      <div class="media-object-section">
-                        9.00 - 17.00
-                      </div>
+                    <div class="media-object-section">
+                      Apr 26, 2016 - Apr 27, 2016
                     </div>
                   </div>
                 </div>
-                <div class="content-box--one">
-                  <div class="columns">
-                    <div class="media-object">
-                      <div class="media-object-section middle">
-                        <i class="icon2-marker"></i>
-                      </div>
-                      <div class="media-object-section">
-                        Cyberview Living Lab - Level 4, Cyberview Sdn Bhd, Block 3750, Persiaran APEC, Cyber 8, 63000, Cyberjaya, Selangor
-                      </div>
+                <div class="columns">
+                  <div class="media-object">
+                    <div class="media-object-section middle">
+                      <i class="icon2-clock"></i>
+                    </div>
+                    <div class="media-object-section">
+                      9.00 - 17.00
                     </div>
                   </div>
                 </div>
               </div>
-              
-              <span class="tiles__cta">
-                Details
-                <i class="icon-chevron-small-right align-middle"></i>
-              </span>
+              <div class="content-box--one">
+                <div class="columns">
+                  <div class="media-object">
+                    <div class="media-object-section middle">
+                      <i class="icon2-marker"></i>
+                    </div>
+                    <div class="media-object-section">
+                      Cyberview Living Lab - Level 4, Cyberview Sdn Bhd, Block 3750, Persiaran APEC, Cyber 8, 63000, Cyberjaya, Selangor
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            
+            <span class="tiles__cta">
+              Details
+              <i class="icon-chevron-small-right align-middle"></i>
+            </span>
           </div>
-        </a>
-      </div>
-      {{/each}}
+        </div>
+      </a>
     </div>
+    {{/each}}
   </div>
 </div>
 

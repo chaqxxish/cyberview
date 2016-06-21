@@ -6,23 +6,39 @@
     display: inline-block;
     position: relative;
 
+    &:before,
+    &:after {
+      background: #535353;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    &:before {
+      content: '';
+      height: 39px;
+      width: 300px;
+    }
+
     &:after {
       border-left: $input-border;
       content: $icon-chevron-thin-down;
       color: $cyber-green;
       font-family: 'cyberview';
       padding: 10px 15px 3px;
-      position: absolute;
-      top: 0;
-      right: 0;
     }
   }
 
   select {
-    background: #535353;
     color: #FFF;
     font-family: $font-heavy;
     margin-left: 10px;
+    padding-right: 45px;
     width: 300px;
+
+    option {
+      background: #535353;
+    }
   }
 }

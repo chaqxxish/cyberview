@@ -65,28 +65,27 @@ event: [{
   </div>
 </section>
 
-<div class="content-box--one">
-  <div class="l-tiles--plain l-tiles--plain-novariance" data-equalizer>
-    <div class="content-box--two">
-      {{#each event}}
-      <div class="columns {{category}}" data-equalizer-watch>
-        <a href="#">
-          <div class="tiles--plain tiles--resources">
-            <div class="tiles__content">
-              <span class="label">{{category}}</span>
-              <span class="tiles__headline">{{title}}</span>
-              <p>{{description}}</p>
 
-              <span class="tiles__cta">
-                <i class="icon2 icon2-download"></i>
-                Download PDF, 1023.4 KB
-              </span>
-            </div>
+<div class="l-tiles--plain l-tiles--plain-novariance" data-equalizer>
+  <div class="content-box--two">
+    {{#each event}}
+    <div class="columns {{category}}" data-equalizer-watch>
+      <a href="#">
+        <div class="tiles--plain tiles--resources">
+          <div class="tiles__content">
+            <span class="label">{{category}}</span>
+            <span class="tiles__headline">{{title}}</span>
+            <p>{{description}}</p>
+
+            <span class="tiles__cta">
+              <i class="icon2 icon2-download"></i>
+              Download PDF, 1023.4 KB
+            </span>
           </div>
-        </a>
-      </div>
-      {{/each}}
+        </div>
+      </a>
     </div>
+    {{/each}}
   </div>
 </div>
 
