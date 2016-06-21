@@ -369,22 +369,22 @@
   @extend %tiles-base;
   @include timing();
   padding: 35px 25px;
-
-  &:hover,
-  &:focus {
-    background-color: $cyber-green !important;
-    color: $body-font-color;
-  }
 }
 
-.tiles--events, .tiles--resources {
+.tiles--events, .tiles--resources, .tiles--media {
   @extend %tiles-base;
+  @extend %tiles-effect;
   padding: 35px 25px;
 
-  &:hover,
-  &:focus {
-    background-color: $cyber-green !important;
-    color: $body-font-color;
+  &:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: #E0E0E0;
+    position: absolute;
+    z-index: -1;
   }
 
   p {
@@ -412,7 +412,7 @@
 
 .tiles--resources {
   @include breakpoint(large) {
-    height: rem-calc(280px);
+    height: rem-calc(350px);
   }
 }
 

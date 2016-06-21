@@ -169,9 +169,9 @@
     > [class*="content-box"] {
       > .columns:nth-child(odd), > .columns:nth-child(even) {
         .tiles--plain {
-          background: #E0E0E0;
+          background-color: transparent;
 
-          * {
+          *:not(.label) {
             color: $body-font-color;
           }
         }
