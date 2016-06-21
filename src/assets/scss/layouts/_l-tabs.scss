@@ -9,6 +9,10 @@
     margin: rem-calc(25px) rem-calc(-10px);
   }
 
+  &.tabs-nomargin .tabs {
+    margin: 0;
+  }
+
   .tabs-title {
     float: none;
     position: relative;
