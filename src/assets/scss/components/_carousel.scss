@@ -93,7 +93,7 @@
     height: 560px;
     margin: 0 auto;
     overflow: hidden;
-    width: 960px;
+    width: 950px;
   }
 
   .carousel-withthumbnails-thumbnails {
@@ -107,6 +107,30 @@
         max-width: 100%;
         padding: 0 5px;
       }
+
+      p {
+        font-family: $font-bold;
+        line-height: 20px;
+        margin: 5px;
+      }
+    }
+    
+    .slick-prev, .slick-next {
+      margin-top: -34px;
+
+      &:hover {
+        &:before {
+          color: $cyber-green;
+        }
+      }
+    }
+
+    .slick-prev {
+      left: -55px;
+    }
+
+    .slick-next {
+      right: -55px;
     }
   }
 }
