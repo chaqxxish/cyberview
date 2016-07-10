@@ -179,3 +179,13 @@
     }
   }
 }
+
+.ts-slider {
+  .slick-prev {
+    left: -55px;
+  }
+
+  .slick-next {
+    right: -55px;
+  }
+}

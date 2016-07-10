@@ -1,3 +1,7 @@
+.slick-slide:focus {
+  outline: 0;
+}
+
 .carousel {
   .slick-slide img {
     display: inline-block;
@@ -90,10 +94,13 @@
 
 @include breakpoint(large) {
   .carousel-withthumbnails {
-    height: 560px;
     margin: 0 auto;
     overflow: hidden;
     width: 950px;
+
+    li {
+      height: 560px;
+    }
   }
 
   .carousel-withthumbnails-thumbnails {
@@ -116,8 +123,6 @@
     }
     
     .slick-prev, .slick-next {
-      margin-top: -34px;
-
       &:hover {
         &:before {
           color: $cyber-green;

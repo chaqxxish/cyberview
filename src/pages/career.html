@@ -1,0 +1,94 @@
+---
+
+# Banner data
+banner: {
+  'is-inverted': true,
+  'imgSrc': 'http://placehold.it/840x570',
+  'preheader': 'Careers',
+  'header': 'Be Part of a<br>Revolution',
+  'content': "<p>Our people are the foundation of our success. We foster an exciting and competitive environment, so you can continuously develop, both personally and professionally.If you are passionate about knowledge sharing, teamwork and think you've got what it takes - then we want you! Join our HIPsters, and together, we'll shape the future.</p>"
+}
+
+jobs: [{
+  'position': 'Senior Executive, Financial Planning & Reporting',
+  'desc': 'Incumbent must ensure delivery and accuracy of monthly management accounts and prepare draft financial statements for the company.'
+},
+{
+  'position': 'Manager, Legal',
+  'desc': 'Ensuring that the operation of the business of the Company (including its subsidiaries and affiliates) complies with laws and other prevalent regulatory provisions'
+}, 
+{
+  'position': 'Project Executive',
+  'desc': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nisi odit expedita dolorum maxime eos ducimus pariatur sequi veritatis cum recusandae, aperiam libero consequatur soluta obcaecati nemo possimus ad laboriosam.'
+}, 
+{
+  'position': 'Senior Executive, Financial Planning & Reporting',
+  'desc': 'Incumbent must ensure delivery and accuracy of monthly management accounts and prepare draft financial statements for the company.'
+},
+{
+  'position': 'Manager, Legal',
+  'desc': 'Ensuring that the operation of the business of the Company (including its subsidiaries and affiliates) complies with laws and other prevalent regulatory provisions'
+}, 
+{
+  'position': 'Project Executive',
+  'desc': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nisi odit expedita dolorum maxime eos ducimus pariatur sequi veritatis cum recusandae, aperiam libero consequatur soluta obcaecati nemo possimus ad laboriosam.'
+}
+]
+
+---
+
+{{> banner-page banner }}
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <h2>Job Listings</h2>
+    </div>
+  </div>
+  <div class="l-tiles--plain" data-equalizer>
+    <div class="content-box--three">
+      {{#each jobs}}
+      <div class="columns">
+        <a href="#">
+          <div class="tiles--plain tiles--career" data-equalizer-watch>
+            <div class="tiles__content">
+              <div class="content-box--two">
+                <div class="columns"><span class="label">Employment Type: Full Time</span></div>
+                <div class="columns align-right"><span>Dec 16, 2015</span></div>
+              </div>
+              <h5>{{position}}</h5>
+              <p>{{desc}}</p>
+              <span class="tiles__cta">
+                Details
+                <i class="icon-chevron-small-right align-middle"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    <li class="pagination-previous disabled">
+      <span class="icon icon-chevron-thin-left"></span>
+      <span class="show-for-sr">Previous</span>
+    </li>
+    <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+    <li><a href="#" aria-label="Page 2">2</a></li>
+    <li><a href="#" aria-label="Page 3">3</a></li>
+    <li><a href="#" aria-label="Page 4">4</a></li>
+    <li class="ellipsis"></li>
+    <li><a href="#" aria-label="Page 12">12</a></li>
+    <li><a href="#" aria-label="Page 13">13</a></li>
+    <li class="pagination-next">
+      <a href="#" aria-label="Next page">
+        <span class="icon icon-chevron-thin-right"></span>
+        <span class="show-for-sr">Next</span>
+      </a>
+    </li>
+  </ul>
+</section>
