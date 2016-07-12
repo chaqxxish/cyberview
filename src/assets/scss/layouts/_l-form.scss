@@ -28,6 +28,11 @@
   label {
     font-family: $font-heavy;
     text-transform: uppercase;
+
+    .label--description {
+      font-family: $font-regular;
+      text-transform: none;
+    }
   }
 
   h6,
@@ -165,6 +170,29 @@
     content: '';
   }
 }
+
+.file-custom {
+  position: relative;
+
+  .button {
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .input-filename {
+    text-transform: none;
+  }
+
+  [type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
 
 .l-checkbox-radio {
   padding-left: 80px;
