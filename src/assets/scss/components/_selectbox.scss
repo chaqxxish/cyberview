@@ -12,7 +12,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      z-index: -1;
+      z-index: 0;
     }
 
     &:before {
@@ -25,6 +25,7 @@
       border-left: $input-border;
       content: $icon-chevron-thin-down;
       color: $cyber-green;
+      cursor: pointer;
       font-family: 'cyberview';
       padding: 10px 15px 3px;
     }
@@ -32,10 +33,13 @@
 
   select {
     color: #FFF;
+    cursor: pointer;
     font-family: $font-heavy;
     margin-left: 10px;
     padding-right: 45px;
+    position: relative;
     width: 300px;
+    z-index: 1;
 
     option {
       background: #535353;

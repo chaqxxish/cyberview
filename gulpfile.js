@@ -35,8 +35,8 @@ var PATHS = {
     'bower_components/jquery-mousewheel/jquery-mousewheel.min.js',
     'bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js',
     'bower_components/what-input/what-input.js',
-    'bower_components/slick-carousel/slick/slick.js',
     'bower_components/remodal/dist/remodal.js',
+    'bower_components/slick-carousel/slick/slick.js',
     'bower_components/jquery.simplemarquee/lib/jquery.simplemarquee.js',
     // Foundation core JS
     'bower_components/foundation-sites/js/foundation.core.js',

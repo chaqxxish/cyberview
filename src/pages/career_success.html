@@ -1,0 +1,66 @@
+---
+
+link1: ['Our Story', 'Management', 'Ongoing Events', 'Media', 'Resources']
+link2: ['Talent', 'Enterprise', 'Pilot', 'Accelarator']
+
+---
+
+<div class="l-banner--page no-image">
+  <div class="banner--page">
+    <div class="banner__content">
+      <div class="banner__content__header">
+        <div class="header-box--social">
+          <h2 class="txt-green">
+            <i class="icon2-yes-circle"></i>
+            Resume Deposited Successfully
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <h5>What's next?</h5>
+      <p>
+        Your resume has been deposited successfully. We at Cyberview are always excited to have new talents join our team. Allow us some time to review your resume and our team will be in touch if we feel you could be a good fit for our opening to schedule an interview.
+      </p>
+      <p>
+        Meanwhile, checkout the links below to learn more about Cyberview!
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="l-section">
+  <div class="content-box--one">
+    <div class="columns">
+      <div class="l-box-links">
+        <div class="content-box--two">
+          <div class="columns">
+            <h6>All you need to know about us and the latest buzz:</h6>
+            <ul class="box-links">
+              {{#each link1}}
+              <li>
+                <a href="#" class="box-links__link">{{this}}</a>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+          <div class="columns">
+            <h6>Got ideas? We can help:</h6>
+            <ul class="box-links">
+              {{#each link2}}
+              <li>
+                <a href="#" class="box-links__link">{{this}}</a>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -60,6 +60,10 @@
   @include breakpoint(large) {
     min-width: 100%;
   }
+
+  .tiles__content {
+    z-index: 1;
+  }
 }
 
 %tiles-effect {
@@ -76,7 +80,7 @@
     left: 0;
     background-color: $cyber-green;
     content: '';
-    z-index: -1;
+    z-index: 0;
     opacity: 0;
   }
 
@@ -396,6 +400,10 @@
     padding-left: 0;
   }
 
+  .tiles__content {
+    position: relative;
+  }
+
   @include breakpoint(large) {
     .tiles__cta {
       position: absolute;
@@ -431,4 +439,17 @@
   @include breakpoint(large) {
     height: rem-calc(450px);
   } 
+}
+
+.tiles--career {
+  .tiles__content {
+    p {
+      padding-bottom: 50px;
+    }
+  }
+  
+  .tiles__cta {
+    padding-left: 25px;
+    text-transform: none;
+  }
 }
