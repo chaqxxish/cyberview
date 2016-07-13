@@ -137,6 +137,28 @@ $('.ts-slider').each(function () {
   }
 })
 
+$('[type="radio"]').on('change', function() {
+  var t = $(this).data('target');  
+  if ($(this).is(':checked')) {
+    var r;
+
+    $('[type="text"].input-others')
+      .attr('disabled', 'disabled')
+      .val('')
+      .blur();
+
+    $('[type="text"].input-others').each(function() { 
+      r = $(this).attr('data-target-radio');
+
+      if (t == r) {
+        $('[data-target-radio="'+ t +'"]').removeAttr('disabled').focus();
+      }
+    })
+    
+  }
+
+})
+
 /*
   By Osvaldas Valutis, www.osvaldas.info
   Available for use under the MIT License
@@ -149,7 +171,7 @@ $('.ts-slider').each(function () {
   $( '.input-file' ).each( function()
   {
     var $input   = $( this ),
-      $label   = $input.next( '.input-filename' ),
+      $label   = $input.parent().find( '.input-filename' ),
       labelVal = $label.html();
 
     $input.on( 'change', function( e )

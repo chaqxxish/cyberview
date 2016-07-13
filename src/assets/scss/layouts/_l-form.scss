@@ -82,6 +82,23 @@
   }
 }
 
+.l-form {
+  .content-box--two {
+    justify-content: space-between;
+
+    @include breakpoint(large) {
+      > ._left {
+        @include flex-grid-column(5, $grid-column-gutter);
+      }
+
+      > ._right {
+        @include flex-grid-column(5, $grid-column-gutter);
+        margin-top: 0;
+      }
+    }
+  }
+}
+
 .selectbox-custom {
   position: relative;
   &:after {
@@ -156,10 +173,15 @@
     border-radius: 50%;
   }
 
+  [type="radio"], .input {
+    width: rem-calc(29px);
+    height: rem-calc(29px);
+  }
+
   [type='radio']:checked + .input:before {
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 9px;
+    height: 9px;
     top: 0;
     right: 0;
     bottom: 0;
@@ -172,6 +194,7 @@
 }
 
 .file-custom {
+  margin-bottom: 20px;
   position: relative;
 
   .button {
@@ -181,6 +204,8 @@
 
   .input-filename {
     text-transform: none;
+    width: 250px;
+    display: inline-block;
   }
 
   [type="file"] {
@@ -190,6 +215,10 @@
     overflow: hidden;
     position: absolute;
     z-index: -1;
+  }
+
+  .content-box {
+    margin: 0;
   }
 }
 
