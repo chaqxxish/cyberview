@@ -1,17 +1,56 @@
 ---
 
-event: [{
-  'title':  'CFR Sdn Bhd',
-  'label': 'Info Tech'
+legend: [{
+  'label': 'Available Unit',
+  'class': 'unit-available',
+  'icon': ''
 },
 {
-  'title':  'Accord Infocom Solution',
-  'label': 'Creative Multimedia'
+  'label': 'Occupied Unit',
+  'class':  'unit-occupied',
+  'icon': ''
 },
 { 
-  'title':  'Aercomsystem Sdn Bhd',
-  'label': 'Info Tech'
+  'label':  'Male Toilet',
+  'class': 'space-toilet',
+  'icon': 'icon2-male'
+},
+{ 
+  'label':  'Female Toilet',
+  'class': 'space-toilet',
+  'icon': 'icon2-female'
+},
+{ 
+  'label':  'Gymnasium',
+  'class': 'space-gym',
+  'icon': 'icon2-gym'
+},
+{ 
+  'label':  'Knowledge Center',
+  'class': 'space-knowledge',
+  'icon': 'icon-book'
+},
+{ 
+  'label':  'Meeting Rooms',
+  'class': 'space-meeting',
+  'icon': 'icon-board'
+},
+{ 
+  'label':  'Cafeteria',
+  'class': 'space-cafeteria',
+  'icon': 'icon-utensils'
+},
+{ 
+  'label':  'Surau',
+  'class': 'space-surau',
+  'icon': 'icon-surau'
 }]
+
+SME1GA1: [
+  {'top': '0', 'left': '0'},
+  {'top': '0', 'left': '44px'}
+]
+
 
 ---
 
@@ -82,8 +121,8 @@ event: [{
     <div class="content-box--one">
       <div class="columns">
         <ul class="tabs" data-tabs id="tabs-event">
-          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Overview</a></li>
-          <li class="tabs-title"><a href="#panel2">Office Layout</a></li>
+          <li class="tabs-title"><a href="#panel1" aria-selected="true">Overview</a></li>
+          <li class="tabs-title is-active"><a href="#panel2">Office Layout</a></li>
           <li class="tabs-title"><a href="#panel3">Tenants Directory</a></li>
         </ul>
       </div>
@@ -93,7 +132,7 @@ event: [{
 
 <div class="tabs-content" data-tabs-content="tabs-event">
   <!-- Tab Panel -->
-  <div class="tabs-panel is-active" id="panel1">
+  <div class="tabs-panel" id="panel1">
     <section class="l-section bg-grey">
       <div class="content-box--one">
         <div class="columns">
@@ -163,53 +202,56 @@ event: [{
     </section>
   </div>
 
-  <div class="tabs-panel" id="panel2">
+  <div class="tabs-panel is-active" id="panel2">
     <section class="l-section bg-grey">
       <div class="content-box--one">
         <div class="columns">
-          <ul class="carousel-withthumbnails">
-            <li>
-              <img src="http://placehold.it/970x560/200?text=Slider1" alt="Image">
-            </li>
-          </ul>
-          <ul class="carousel-withthumbnails-thumbnails">
-            <li>
-              <img src="http://placehold.it/320x190/200?text=Slider1" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider1" data-type="img">
-            </li>
-            <li>
-              <img src="http://placehold.it/320x190/300?text=Slider2" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider2" data-type="img">
-            </li>
-            <li>
-              <img src="http://placehold.it/320x190/400?text=slider3" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider3" data-type="img">
-            </li>
-            <li>
-              <img src="http://placehold.it/320x190/500?text=Slider4" alt="Image" data-url="http://placehold.it/970x560/200?text=Slider4" data-type="img">
-            </li>
-            <li>
-              <img src="http://placehold.it/320x190/600?text=slider5" alt="Image" data-url="http://www.youtube.com/embed/W7qWa52k-nE" data-type="iframe">
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+          <h2>Building Layout and Office Space Availabilit</h2>
 
-    <section class="l-section">
-      <div class="content-box--one">
-        <div class="columns">
-          <div class="event-detail--info">
-            <h3>Weekly Courses</h3>
-            <div class="event-detail--info">
-              <h5>Lego Weekly Classes</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores aperiam possimus velit repudiandae odit quidem, error minus explicabo, nemo magnam eveniet minima doloremque, iusto excepturi dolor ipsum libero autem. Omnis!
-              </p>
+          <p>
+            <strong>Step 1 : Choose Floor to view Layout</strong>
+          </p>
+          <div class="l-tabs">
+            <ul class="tabs tabs-floorplan" data-tabs id="tabs-floorplan">
+              <li class="tabs-title is-active"><a href="#floorG" aria-selected="true">G</a></li>
+              <li class="tabs-title"><a href="#floor1">1</a></li>
+              <li class="tabs-title"><a href="#floor2">2</a></li>
+              <li class="tabs-title"><a href="#floor3">3</a></li>
+            </ul>
+          </div>
+
+          <p>
+            <strong>Step 2: All green color are available office spaces, select your space to enquire.</strong>
+          </p>
+          <div class="l-floorplan">
+            <div class="tabs-content" data-tabs-content="tabs-floorplan">
+              <div id="floorG" class="tabs-panel is-active">
+                {{> floorplan_sme1_g}}
+              </div>
+              <div id="floor1" class="tabs-panel">
+                #1
+              </div>
+              <div id="floor2" class="tabs-panel">
+                #2
+              </div>
+              <div id="floor3" class="tabs-panel">
+                #3
+              </div>
             </div>
-
-            <div class="event-detail--info">
-              <h5>Lego Weekly Classes</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ratione doloribus at, animi ab maiores, voluptatem aliquid laudantium aut! Quisquam qui aliquam expedita, nemo id dolor distinctio laborum quo voluptatibus.
-              </p>
+            <div class="l-legend">
+              <h4>Legend</h4>
+              <div class="legend">
+                {{#each legend}}
+                <div class="legend-item">
+                  <ul>
+                    <li class="{{class}}">
+                      <i class="{{icon}}"></i>
+                    </li>
+                    <li>{{label}}</li>
+                  </ul>
+                </div>
+                {{/each}}
+              </div>
             </div>
           </div>
         </div>

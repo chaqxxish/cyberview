@@ -1,0 +1,17 @@
+.unit {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+#floorplan--sme1-g-blockA {
+    top: 51px;
+    left: 206px;
+    width: 546px;
+    height: 114px;
+
+  .unit {
+    width: 43px;
+    height: 43px;
+  }
+}

@@ -189,3 +189,28 @@
     right: -55px;
   }
 }
+
+.tabs.tabs-floorplan {
+  margin: 0;
+
+  li {
+    &.is-active a {
+      background-color: $cyber-green;
+      border-color: $cyber-green;
+      color: $cyber-darkgrey;
+    }
+
+    > a {
+      border: 1px solid $cyber-darkgrey;
+      padding: 14px 20px;
+
+      @include breakpoint(medium) {
+        font-size: 24px;
+      }
+    }
+
+    + li {
+      margin-left: 10px;
+    }
+  }
+}
