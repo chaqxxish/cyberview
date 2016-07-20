@@ -156,8 +156,36 @@ $('[type="radio"]').on('change', function() {
     })
     
   }
-
 })
+
+  var $floorplanTooltip = $('#floorplan--tooltip'),
+      $tt_unit = $floorplanTooltip.find('.data-unit'),
+      $tt_type = $floorplanTooltip.find('.data-type'),
+      $tt_area = $floorplanTooltip.find('.data-area'),
+      $tt_layout = $floorplanTooltip.find('.data-layout'),
+      $tt_rental = $floorplanTooltip.find('.data-rental'),
+      $unit = $('.unit');
+
+  $unit.mouseenter(function () {
+    var $this = $(this),
+        unit = $this.data('unit'),
+        type = $this.data('type'),
+        area = $this.data('area'),
+        layout = $this.data('layout'),
+        rental = $this.data('rental');
+
+    $tt_unit.text(unit);
+    $tt_type.text(type);
+    $tt_area.text(area);
+    $tt_layout.text(layout);
+    $tt_rental.text(rental);
+  }).mouseleave(function() {
+    $tt_unit.text('');
+    $tt_type.text('');
+    $tt_area.text('');
+    $tt_layout.text('');
+    $tt_rental.text('');
+  });
 
 /*
   By Osvaldas Valutis, www.osvaldas.info

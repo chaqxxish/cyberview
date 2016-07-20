@@ -5,9 +5,21 @@
     <div id="floorplan--sme1-g-blockA" class="floorplan-units">
       <div class="floorplan--block">
       {{#each SME1GA1}}
-        <div class="unit available" style="top: {{top}}; left: {{left}}"></div>
+        <div class="unit available" style="top: {{top}}; left: {{left}}" data-unit="{{unit}}" data-type="{{type}}" data-area="{{area}}" data-layout="{{layout}}" data-rental="{{rental}}" data-vacant="{{vacant}}"></div>
       {{/each}}
       </div>
+    </div>
+  </div>
+
+  <div id="floorplan--tooltip">
+    <div>
+      <p>Unit No: <span class="data-unit">Unit</span></p>  
+      <p>Type: <span class="data-type">Type</span></p>  
+      <p>Floor Area: <span class="data-area">Floor Area</span></p>  
+      <p>Floor Layout: <span class="data-layout">Floor Layout</span></p>
+      <p>Rental: <span class="data-rental">Rental</span></p>  
+
+      <a href="#" class="button">Enquire Us</a>
     </div>
   </div>
 </div>
