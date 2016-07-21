@@ -97,6 +97,14 @@
       }
     }
   }
+
+  @include breakpoint(large) {
+    &.content-form {
+      label {
+        margin-right: 100px;
+      }
+    }
+  }
 }
 
 .selectbox-custom {
