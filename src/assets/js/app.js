@@ -1,6 +1,27 @@
 /* Fundation plugin initiation */
 $(document).foundation();
 
+// Check for CSS3 transitions
+function whichTransitionEvent(){
+    var t;
+    var el = document.createElement('fakeelement');
+    var transitions = {
+      'transition':'transitionend',
+      'OTransition':'oTransitionEnd',
+      'MozTransition':'transitionend',
+      'WebkitTransition':'webkitTransitionEnd'
+    }
+
+    for(t in transitions){
+        if( el.style[t] !== undefined ){
+            return transitions[t];
+        }
+    }
+}
+
+var transitionEvent = whichTransitionEvent();
+
+
 /* Landing template background image injection */
 var list = document.querySelectorAll("[data-image]");
 
@@ -168,6 +189,9 @@ $('[type="radio"]').on('change', function() {
 
   $unit.mouseenter(function () {
     var $this = $(this),
+        position = $this.position(),
+        width = $this.width(),
+        height = $this.height();
         unit = $this.data('unit'),
         type = $this.data('type'),
         area = $this.data('area'),
@@ -179,12 +203,32 @@ $('[type="radio"]').on('change', function() {
     $tt_area.text(area);
     $tt_layout.text(layout);
     $tt_rental.text(rental);
+
+    // Get the center point of unit
+    var x = position.left + width / 2,
+        y = position.top + height / 2;
+
+    $floorplanTooltip.css({
+      top: y + 10,
+      left: x - 123
+    }).addClass('show');
   }).mouseleave(function() {
-    $tt_unit.text('');
-    $tt_type.text('');
-    $tt_area.text('');
-    $tt_layout.text('');
-    $tt_rental.text('');
+    $floorplanTooltip.removeClass('show');
+
+    transitionEvent && $floorplanTooltip.addEventListener(transitionEvent, function() {
+      $tt_unit.text('');
+      $tt_type.text('');
+      $tt_area.text('');
+      $tt_layout.text('');
+      $tt_rental.text('');
+
+      $floorplanTooltip.css({
+        top: '',
+        left: ''
+      });
+    });
+
+
   });
 
 /*

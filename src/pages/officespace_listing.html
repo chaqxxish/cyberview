@@ -47,16 +47,16 @@ legend: [{
 }]
 
 SME1GA1: [
-  {'top': '0', 'left': '0', 'unit': 'C-G-02', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM1748', 'vacant': true},
-  {'top': '0', 'left': '46px', 'unit': 'C-G-03', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM1233', 'vacant': false},
-  {'top': '0', 'left': '129px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
-  {'top': '0', 'left': '175px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
-  {'top': '0', 'left': '221px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
-  {'top': '0', 'left': '282px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
-  {'top': '0', 'left': '328px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
-  {'top': '0', 'left': '374px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
-  {'top': '0', 'left': '457px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
-  {'top': '0', 'left': '503px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false}
+  {'top': '51px', 'left': '206px', 'unit': 'C-G-02', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM1748', 'vacant': true},
+  {'top': '51px', 'left': '252px', 'unit': 'C-G-03', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM1233', 'vacant': false},
+  {'top': '51px', 'left': '335px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
+  {'top': '51px', 'left': '381px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
+  {'top': '51px', 'left': '427px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
+  {'top': '51px', 'left': '488px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
+  {'top': '51px', 'left': '534px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
+  {'top': '51px', 'left': '580px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
+  {'top': '51px', 'left': '663px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false},
+  {'top': '51px', 'left': '709px', 'unit': 'C-G-04', 'type': 'A1', 'area': '699 sq. ft.', 'layout': 'View Diagram', 'rental': 'RM3189', 'vacant': false}
 ]
 
 
@@ -233,17 +233,31 @@ SME1GA1: [
           </p>
           <div class="l-floorplan">
             <div class="tabs-content" data-tabs-content="tabs-floorplan">
-              <div id="floorG" class="tabs-panel is-active">
-                {{> floorplan_sme1_g}}
-              </div>
-              <div id="floor1" class="tabs-panel">
-                #1
-              </div>
-              <div id="floor2" class="tabs-panel">
-                #2
-              </div>
-              <div id="floor3" class="tabs-panel">
-                #3
+              <div class="floorplan-wrap">
+                <div id="floorG" class="tabs-panel is-active">
+                  {{> floorplan_sme1_g}}
+                </div>
+                <div id="floor1" class="tabs-panel">
+                  #1
+                </div>
+                <div id="floor2" class="tabs-panel">
+                  #2
+                </div>
+                <div id="floor3" class="tabs-panel">
+                  #3
+                </div>
+
+                <div id="floorplan--tooltip">
+                  <div>
+                    <p>Unit No: <span class="data-unit">Unit</span></p>  
+                    <p>Type: <span class="data-type">Type</span></p>  
+                    <p>Floor Area: <span class="data-area">Floor Area</span></p>  
+                    <p>Floor Layout: <span class="data-layout">Floor Layout</span></p>
+                    <p>Rental: <span class="data-rental">Rental</span></p>  
+
+                    <a href="#" class="button">Enquire Us</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="l-legend">
