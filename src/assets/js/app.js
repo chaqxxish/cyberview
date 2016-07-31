@@ -179,57 +179,55 @@ $('[type="radio"]').on('change', function() {
   }
 })
 
-  var $floorplanTooltip = $('#floorplan--tooltip'),
-      $tt_unit = $floorplanTooltip.find('.data-unit'),
-      $tt_type = $floorplanTooltip.find('.data-type'),
-      $tt_area = $floorplanTooltip.find('.data-area'),
-      $tt_layout = $floorplanTooltip.find('.data-layout'),
-      $tt_rental = $floorplanTooltip.find('.data-rental'),
-      $unit = $('.unit');
 
-  $unit.mouseenter(function () {
-    var $this = $(this),
-        position = $this.position(),
-        width = $this.width(),
-        height = $this.height();
-        unit = $this.data('unit'),
-        type = $this.data('type'),
-        area = $this.data('area'),
-        layout = $this.data('layout'),
-        rental = $this.data('rental');
+// Load floor plan units
+function displayFloorplanUnits(json, ele) {
+  $.getJSON(json, function (data) {
+    $img = $(ele).find('img');
+    $units = $(ele).find('.floorplan-units-wrap');
 
-    $tt_unit.text(unit);
-    $tt_type.text(type);
-    $tt_area.text(area);
-    $tt_layout.text(layout);
-    $tt_rental.text(rental);
-
-    // Get the center point of unit
-    var x = position.left + width / 2,
-        y = position.top + height / 2;
-
-    $floorplanTooltip.css({
-      top: y + 10,
-      left: x - 123
-    }).addClass('show');
-  }).mouseleave(function() {
-    $floorplanTooltip.removeClass('show');
-
-    transitionEvent && $floorplanTooltip.addEventListener(transitionEvent, function() {
-      $tt_unit.text('');
-      $tt_type.text('');
-      $tt_area.text('');
-      $tt_layout.text('');
-      $tt_rental.text('');
-
-      $floorplanTooltip.css({
-        top: '',
-        left: ''
+    for (var key in data) {
+      var val = data[key];
+      $img.attr({
+        src: '/assets/img/floorplan/' + val[0]['img'],
+        alt: val[0]['img']
       });
-    });
+
+      for (var i = 0; i < val[0]['units'].length; i++) {
+        $unit = val[0]['units'][i];
+        $unitSize = '';
+
+        if ($unit['sizeInner']) {
+          for (var j = 0; j < $unit['sizeInner'].length; j++) {
+            $size = $unit['sizeInner'][j];
+            $topInner = ($size['top']) ? 'top: ' + $size['top'] + ';' : '';
+            $bottomInner = ($size['bottom']) ? 'bottom: ' + $size['bottom'] + ';' : '';
+            $leftInner = ($size['left']) ? 'left: ' + $size['left'] + ';' : '';
+            $rightInner = ($size['right']) ? 'right: ' + $size['right'] + ';' : '';
+            $widthInner = ($size['width']) ? 'width: ' + $size['width'] + ';' : '';
+            $heightInner = ($size['height']) ? 'height: ' + $size['height'] + ';' : '';
 
 
+            $unitSize += '<span style="'+ $widthInner + $heightInner + $topInner + $bottomInner + $leftInner + $rightInner +'"></span>';
+          }
+        } else {
+          $unitSize += '<span></span>';
+        }
+
+        $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
+
+        $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
+
+        $unitAppend = '<div class="unit" style="width:'+ $unit['width'] +'; height: '+ $unit['height'] +'; top: '+ $unit['top'] +'; left: '+ $unit['left'] +'" data-vacant="'+ $unit['vacant'] +'">'+ $unitSize + $unitTooltip + '</div>';
+
+        
+        $units.append($unitAppend);
+      }
+    }
   });
+}
+
+displayFloorplanUnits('./assets/floorplan/sme1.json', '#floorG');
 
 /*
   By Osvaldas Valutis, www.osvaldas.info
