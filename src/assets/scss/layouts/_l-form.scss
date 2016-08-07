@@ -107,6 +107,27 @@
   }
 }
 
+.l-register {
+  > .content-box--one {
+    @include flex-grid-row-align(justify, null);
+
+    > .columns {
+      @include flex-grid-column(6, $grid-column-gutter);
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .help-text {
+    margin-top: -20px;
+    text-align: right;
+  }
+
+  hr {
+    margin: rem-calc(40px) auto;
+  }
+}
+
 .selectbox-custom {
   position: relative;
   &:after {

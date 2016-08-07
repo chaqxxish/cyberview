@@ -61,6 +61,17 @@ legend: [{
   'icon': 'icon-management'
 }]
 
+script: [
+  {
+    'file': './assets/floorplan/sme1.json',
+    'target': '#floorG'
+  },
+  {
+    'file': './assets/floorplan/sme1-1.json',
+    'target': '#floor1'
+  }
+]
+
 ---
 
 <div class="l-banner--page no-image">
@@ -222,8 +233,8 @@ legend: [{
           </p>
           <div class="l-tabs">
             <ul class="tabs tabs-floorplan" data-tabs id="tabs-floorplan">
-              <li class="tabs-title is-active"><a href="#floorG" aria-selected="true">G</a></li>
-              <li class="tabs-title"><a href="#floor1">1</a></li>
+              <li class="tabs-title"><a href="#floorG" aria-selected="true">G</a></li>
+              <li class="tabs-title is-active"><a href="#floor1">1</a></li>
               <li class="tabs-title"><a href="#floor2">2</a></li>
               <li class="tabs-title"><a href="#floor3">3</a></li>
             </ul>
@@ -235,18 +246,26 @@ legend: [{
           <div class="l-floorplan">
             <div class="tabs-content" data-tabs-content="tabs-floorplan">
               <div class="floorplan-wrap">
-                <div id="floorG" class="tabs-panel is-active">
+                <div id="floorG" class="tabs-panel">
                   {{> floorplan_sme1_g}}
                 </div>
-                <div id="floor1" class="tabs-panel">
-                  <img src="/assets/img/floorplan/sme1-1.jpg" alt="SME">
-                  <div class="floorplan-units-wrap"></div>
+                <div id="floor1" class="tabs-panel is-active">
+                  <div class="floorplan-img-wrap">
+                    <img src="/assets/img/floorplan/sme1-1.jpg" alt="SME">
+                    <div class="floorplan-units-wrap"></div>
+                  </div>
                 </div>
                 <div id="floor2" class="tabs-panel">
-                  <img src="/assets/img/floorplan/sme1-2.jpg" alt="SME">
+                  <div class="floorplan-img-wrap">
+                    <img src="/assets/img/floorplan/sme1-2.jpg" alt="SME">
+                    <div class="floorplan-units-wrap"></div>
+                  </div>
                 </div>
                 <div id="floor3" class="tabs-panel">
-                  <img src="/assets/img/floorplan/sme1-3.jpg" alt="SME">
+                  <div class="floorplan-img-wrap">
+                    <img src="/assets/img/floorplan/sme1-3.jpg" alt="SME">
+                    <div class="floorplan-units-wrap"></div>
+                  </div>
                 </div>
               </div>
             </div>

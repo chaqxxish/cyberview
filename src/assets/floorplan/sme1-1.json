@@ -1,8 +1,8 @@
 {"SME1": 
   [
     {
-      "floor": "g",
-      "img" : "sme1-g.jpg",
+      "floor": "1",
+      "img" : "sme1-1.jpg",
       "units": [
         {
           "top": "58px", 
@@ -292,6 +292,19 @@
         },
         {
           "top": "494px", 
+          "left": "184px",
+          "width": "43px",
+          "height": "43px",
+          "sizeInner": null,
+          "unit": "C-G-04",
+          "type": "A1", 
+          "area": "699 sq. ft.",
+          "layout": "View Diagram",
+          "rental": "RM3189",
+          "vacant": false
+        },
+        {
+          "top": "494px", 
           "left": "231px",
           "width": "43px",
           "height": "43px",
@@ -512,19 +525,11 @@
           "vacant": false
         },
         {
-          "top": "278px", 
-          "left": "59px",
-          "width": "87px",
-          "height": "110px",
-          "sizeInner": [{
-            "height": "79px"
-          },
-          {
-            "width": "40px",
-            "height": "31px",
-            "right": "0",
-            "bottom": "0"
-          }],
+          "top": "316px",
+          "left": "110px",
+          "width": "39px",
+          "height": "36px",
+          "sizeInner": null,
           "unit": "C-G-04",
           "type": "A1", 
           "area": "699 sq. ft.",
@@ -533,10 +538,88 @@
           "vacant": false
         },
         {
-          "top": "391px", 
-          "left": "59px",
-          "width": "87px",
-          "height": "43px",
+          "top": "275px",
+          "left": "57px",
+          "width": "39px",
+          "height": "36px",
+          "sizeInner": null,
+          "unit": "C-G-04",
+          "type": "A1", 
+          "area": "699 sq. ft.",
+          "layout": "View Diagram",
+          "rental": "RM3189",
+          "vacant": false
+        },
+        {
+          "top": "316px",
+          "left": "57px",
+          "width": "39px",
+          "height": "36px",
+          "sizeInner": null,
+          "unit": "C-G-04",
+          "type": "A1", 
+          "area": "699 sq. ft.",
+          "layout": "View Diagram",
+          "rental": "RM3189",
+          "vacant": false
+        },
+        {
+          "top": "357px",
+          "left": "57px",
+          "width": "39px",
+          "height": "36px",
+          "sizeInner": null,
+          "unit": "C-G-04",
+          "type": "A1", 
+          "area": "699 sq. ft.",
+          "layout": "View Diagram",
+          "rental": "RM3189",
+          "vacant": false
+        },
+        {
+          "top": "398px",
+          "left": "57px",
+          "width": "39px",
+          "height": "36px",
+          "sizeInner": null,
+          "unit": "C-G-04",
+          "type": "A1", 
+          "area": "699 sq. ft.",
+          "layout": "View Diagram",
+          "rental": "RM3189",
+          "vacant": false
+        },
+        {
+          "top": "256px",
+          "left": "110px",
+          "width": "39px",
+          "height": "55px",
+          "sizeInner": null,
+          "unit": "C-G-04",
+          "type": "A1", 
+          "area": "699 sq. ft.",
+          "layout": "View Diagram",
+          "rental": "RM3189",
+          "vacant": false
+        },
+        {
+          "top": "357px",
+          "left": "110px",
+          "width": "39px",
+          "height": "55px",
+          "sizeInner": null,
+          "unit": "C-G-04",
+          "type": "A1", 
+          "area": "699 sq. ft.",
+          "layout": "View Diagram",
+          "rental": "RM3189",
+          "vacant": false
+        },
+        {
+          "top": "234px",
+          "left": "57px",
+          "width": "39px",
+          "height": "36px",
           "sizeInner": null,
           "unit": "C-G-04",
           "type": "A1", 
