@@ -65,7 +65,10 @@
 
           &:first-child {
             height: 46px;
-            width: 46px;            
+            width: 46px;
+            text-align: center;
+            padding: 3px 0;
+            background-color: #1C9977;
           }
 
           + li {
@@ -75,51 +78,17 @@
           }
 
           i {
+            font-size: 190%;
+            line-height: 40px;
             color: #FFF;
           }
 
           &.unit-available {
-            background-color: #21C358;
+            background-color: $floorplan-vacant;
           }
 
           &.unit-occupied {
-            background-color: #616161;
-          }
-
-          &.space-toilet {
-            background-color: #2367A1;
-          }
-
-          &.space-gym {
-            background-color: #5598AC;
-          }
-
-          &.space-knowledge {
-            background-color: #9565A8;
-          }
-
-          &.space-meeting {
-            background-color: #E56F63;
-          }
-
-          &.space-cafeteria {
-            background-color: #EF9E18;
-          }
-
-          &.space-surau {
-            background-color: #4FAB32;
-          }
-
-          &.space-fireescape {
-            background-color: #AB4953;
-          }
-
-          &.space-lift {
-            background-color: #C25797;
-          }
-
-          &.space-management {
-            background-color: #46B8A6;
+            background-color: $floorplan-occupied;
           }
         }
       }

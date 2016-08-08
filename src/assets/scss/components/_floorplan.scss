@@ -12,8 +12,7 @@
   }
 
   > span {
-    background: #616161;
-    background: rgba(251, 0, 197, 0.28);
+    background: $floorplan-occupied;
     display: block;
     height: 100%;
     position: absolute;
@@ -27,21 +26,21 @@
 
   &[data-vacant="false"] {
     > span {
-      background: #616161;
+      background: $floorplan-occupied;
     }
 
     &:hover > span {
-      background: lighten(#616161, 5%);
+      background: lighten($floorplan-occupied, 10%);
     }
   }
 
   &[data-vacant="true"] {
     > span {
-      background: #21C358;
+      background: $floorplan-vacant;
     }
 
     &:hover > span {
-      background: lighten(#21C358, 5%);
+      background: lighten($floorplan-vacant, 5%);
     }
   }
 }
