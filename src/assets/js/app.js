@@ -158,7 +158,7 @@ $('.ts-slider').each(function () {
   }
 })
 
-$('[type="radio"]').on('change', function() {
+$('[type="radio"]:not(.radio-options-tab)').on('change', function() {
   var t = $(this).data('target');  
   if ($(this).is(':checked')) {
     var r;
@@ -175,8 +175,15 @@ $('[type="radio"]').on('change', function() {
         $('[data-target-radio="'+ t +'"]').removeAttr('disabled').focus();
       }
     })
-    
   }
+})
+
+$('[type="radio"].radio-options-tab').on('change', function() {
+  var t = $(this).parents('.columns').index(),
+      $ele = $('.radio-type-selections').eq(t);
+
+  $('.radio-type-selections').hide();
+  $ele.show();
 })
 
 /*
