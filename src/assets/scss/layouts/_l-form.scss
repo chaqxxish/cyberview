@@ -45,6 +45,13 @@
     resize: none;
   }
 
+  input[disabled="disabled"] {
+    background: transparent;
+    color: #6d6d6d;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+
   [type='text'],
   [type='email'],
   select,
