@@ -62,12 +62,12 @@ event: [{
   </div>
 </section>
 
-<div class="l-tiles--plain l-tiles--plain-novariance">
+<div class="l-tiles--plain l-tiles--plain-novariance" data-equalizer>
   <div class="content-box--two">
     {{#each event}}
     <div class="columns {{category}}">
       <a href="event_details.html">
-        <div class="tiles--plain tiles--events">
+        <div class="tiles--plain tiles--events" data-equalizer-watch>
           <div class="tiles__content">
             <span class="label">{{category}}</span>
             <span class="tiles__headline">{{title}}</span>
