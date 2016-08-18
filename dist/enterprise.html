@@ -543,54 +543,34 @@
     <script>
       $(document).ready(function() {
         // Load floor plan units
-        function displayFloorplanUnits(json, ele) {
+        function displayFloorplanUnits2(json, ele) {
           $.getJSON(json, function (data) {
-            $img = $(ele).find('img');
             $units = $(ele).find('.floorplan-units-wrap');
     
             for (var key in data) {
               var val = data[key];
-              $img.attr({
-                src: '/assets/img/floorplan/' + val[0]['img'],
-                alt: val[0]['img']
-              });
     
-              for (var i = 0; i < val[0]['units'].length; i++) {
-                $unit = val[0]['units'][i];
+              for (var i = 0; i < val['units'].length; i++) {
+                $unit = val['units'][i];
                 $unitSize = '';
     
-                if ($unit['sizeInner']) {
-                  for (var j = 0; j < $unit['sizeInner'].length; j++) {
-                    $size = $unit['sizeInner'][j];
-                    $topInner = ($size['top']) ? 'top: ' + $size['top'] + ';' : '';
-                    $bottomInner = ($size['bottom']) ? 'bottom: ' + $size['bottom'] + ';' : '';
-                    $leftInner = ($size['left']) ? 'left: ' + $size['left'] + ';' : '';
-                    $rightInner = ($size['right']) ? 'right: ' + $size['right'] + ';' : '';
-                    $widthInner = ($size['width']) ? 'width: ' + $size['width'] + ';' : '';
-                    $heightInner = ($size['height']) ? 'height: ' + $size['height'] + ';' : '';
+                if ($unit['unit']) {
+                  $('#unit-' + $unit['unit']).attr('data-vacant', $unit['vacant']);
+                  
+                  $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
+                  $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
     
-    
-                    $unitSize += '<span style="'+ $widthInner + $heightInner + $topInner + $bottomInner + $leftInner + $rightInner +'"></span>';
-                  }
-                } else {
-                  $unitSize += '<span></span>';
+                  $('#unit-' + $unit['unit']).append($unitTooltip);
                 }
-    
-                $btnEnquire = ($unit['vacant'] == true) ? '<a href="#" class="button">Enquire Us</a>' : '';
-    
-                $unitTooltip = '<div class="floorplan--tooltip"><div><p>Unit No: <span>'+ $unit['unit'] +'</span></p><p>Type: <span>'+ $unit['unit'] +'</span></p><p>Floor Area: <span>'+ $unit['area'] +'</span></p><p>Floor Layout: <span><a href="'+ $unit['layout'] +'">View Diagram</a></span></p><p>Rental: <span>'+ $unit['rental'] +'</span></p>'+ $btnEnquire +'</div></div>';
-    
-                $unitAppend = '<div class="unit" style="width:'+ $unit['width'] +'; height: '+ $unit['height'] +'; top: '+ $unit['top'] +'; left: '+ $unit['left'] +'" data-vacant="'+ $unit['vacant'] +'">'+ $unitSize + $unitTooltip + '</div>';
-    
-                
-                $units.append($unitAppend);
               }
             }
           });
         }
     
-        displayFloorplanUnits('./assets/floorplan/sme1.json', '#floorG');
-        displayFloorplanUnits('./assets/floorplan/sme1-1.json', '#floor1');
+        displayFloorplanUnits2('./assets/floorplan/sme1.json', '#floorG');
+        displayFloorplanUnits2('./assets/floorplan/sme1-1.json', '#floor1');
+        displayFloorplanUnits2('./assets/floorplan/sme1-2.json', '#floor2');
+        displayFloorplanUnits2('./assets/floorplan/sme1-3.json', '#floor3');
       })
     </script>
   </body>

@@ -59,16 +59,30 @@
   }
 
   > ._left {
-    @include flex-grid-order(1);
+    @include flex-grid-order(0);
   }
 
   > ._right {
-    @include flex-grid-order(0);
+    @include flex-grid-order(1);
   }
 
   .media--info {
     li {
-      width: 40%;
+      margin-right: 10px;
+
+      @include breakpoint(large) {
+        width: 40%;
+        margin-right: 40px;
+      }
+    }
+
+    &.hide-for-large {
+      float: right;
+
+      li {
+        display: block;
+        margin: 0;
+      }
     }
   }
 

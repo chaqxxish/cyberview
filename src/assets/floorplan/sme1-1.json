@@ -1,647 +1,389 @@
-{"SME1": 
-  [
-    {
-      "floor": "1",
-      "img" : "sme1-1.jpg",
-      "units": [
-        {
-          "top": "58px", 
-          "left": "56px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-02",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1748",
-          "vacant": true
-        },
-        {
-          "top": "58px", 
-          "left": "102px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-03",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1233",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "184px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "231px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "277px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "338px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "384px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "430px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1",
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "513px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "58px", 
-          "left": "558px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "56px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-02",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1748",
-          "vacant": true
-        },
-        {
-          "top": "128px", 
-          "left": "102px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-03",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1233",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "184px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "231px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "277px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "338px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "384px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "430px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1",
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "513px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "128px", 
-          "left": "558px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "56px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-02",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1748",
-          "vacant": true
-        },
-        {
-          "top": "494px", 
-          "left": "102px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-03",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1233",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "184px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "231px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "277px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "338px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "384px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "430px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1",
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "513px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "494px", 
-          "left": "558px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "56px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-02",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1748",
-          "vacant": true
-        },
-        {
-          "top": "565px", 
-          "left": "102px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-03",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM1233",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "184px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "231px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "277px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "338px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "384px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "430px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1",
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "513px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "565px", 
-          "left": "558px",
-          "width": "43px",
-          "height": "43px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "316px",
-          "left": "110px",
-          "width": "39px",
-          "height": "36px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "275px",
-          "left": "57px",
-          "width": "39px",
-          "height": "36px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "316px",
-          "left": "57px",
-          "width": "39px",
-          "height": "36px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "357px",
-          "left": "57px",
-          "width": "39px",
-          "height": "36px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "398px",
-          "left": "57px",
-          "width": "39px",
-          "height": "36px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "256px",
-          "left": "110px",
-          "width": "39px",
-          "height": "55px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "357px",
-          "left": "110px",
-          "width": "39px",
-          "height": "55px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "234px",
-          "left": "57px",
-          "width": "39px",
-          "height": "36px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        },
-        {
-          "top": "203px",
-          "left": "569px",
-          "width": "66px",
-          "height": "41px",
-          "sizeInner": null,
-          "unit": "C-G-04",
-          "type": "A1", 
-          "area": "699 sq. ft.",
-          "layout": "View Diagram",
-          "rental": "RM3189",
-          "vacant": false
-        }
-      ]
-    }
-  ]
+{"SME1": {
+    "units": [
+      {
+        "unit": "C-01-02",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "C-01-03",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-04",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-05",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-06",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-07",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-08",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-09",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-10",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-11",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-12",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "C-01-13",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-14",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-15",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-16",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-17",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-18",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-19",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-20",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-21",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-22",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "C-01-23",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-24",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-25",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-26",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-27",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-28",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-29",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-30",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-31",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-32",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1748",
+        "vacant": true
+      },
+      {
+        "unit": "C-01-33",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM1233",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-34",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-35",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-36",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-37",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-38",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-39",
+        "type": "A1",
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-40",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-41",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-42",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-43",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-44",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-45",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-46",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-47",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-48",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      },
+      {
+        "unit": "C-01-49",
+        "type": "A1", 
+        "area": "699 sq. ft.",
+        "layout": "View Diagram",
+        "rental": "RM3189",
+        "vacant": false
+      }
+    ]
+  }
 }

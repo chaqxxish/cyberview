@@ -61,6 +61,22 @@ script: [
   }
 ]
 
+event: [{
+  'title':  'Smart traffic lights on Cyberjaya streets',
+  'description': 'Cyberview Sdn Bhd has secured a Smart City Catalyst funding from the Multimedia Development Corporation (MDeC) to implement a Smart Traffic Management System, or more commonly known as Smart Traffic Lights, in Cyberjaya.',
+  'label': 'Info Tech'
+},
+{
+  'title':  'Lahir warga muda celik teknologi digital',
+  'description': 'Sebagai satu inisiatif untuk memberi inspirasi dan minat kepada generasi muda dalam pengaturcaraan dan teknologi maklumat, Cyberview Sdn Bhd (Cyberview), bersama-sama dengan Terato Tech menjalinkan kerjasama dengan Microsoft untuk memperkenalkan kepada dunia program berkaitan pengaturcaraan melalui permainan popular dalam talian Minecraft.',
+  'label': 'Creative Multimedia'
+},
+{ 
+  'title':  "Cyberjaya's road towards global technology hub",
+  "description": "The accomplishment thus far achieved by Cyberjaya is impressive. Enabling this is Cyberview Sdn Bhd, the Technology Hub Enabler for the city.",
+  'label': 'Info Tech'
+}]
+
 ---
 
 <div class="l-banner--page no-image">
@@ -130,8 +146,8 @@ script: [
     <div class="content-box--one">
       <div class="columns">
         <ul class="tabs" data-tabs id="tabs-event">
-          <li class="tabs-title"><a href="#panel1" aria-selected="true">Overview</a></li>
-          <li class="tabs-title is-active"><a href="#panel2">Office Layout</a></li>
+          <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Overview</a></li>
+          <li class="tabs-title"><a href="#panel2">Office Layout</a></li>
           <li class="tabs-title"><a href="#panel3">Tenants Directory</a></li>
         </ul>
       </div>
@@ -141,7 +157,7 @@ script: [
 
 <div class="tabs-content" data-tabs-content="tabs-event">
   <!-- Tab Panel -->
-  <div class="tabs-panel" id="panel1">
+  <div class="tabs-panel is-active" id="panel1">
     <section class="l-section bg-grey">
       <div class="content-box--one">
         <div class="columns">
@@ -211,50 +227,44 @@ script: [
     </section>
   </div>
 
-  <div class="tabs-panel is-active" id="panel2">
+  <div class="tabs-panel" id="panel2">
     <section class="l-section bg-grey">
       <div class="content-box--one">
         <div class="columns">
-          <h2>Building Layout and Office Space Availabilit</h2>
+          <h2>Building Layout and Office Space Availability</h2>
 
           <p>
             <strong>Step 1 : Choose Floor to view Layout</strong>
           </p>
           <div class="l-tabs">
             <ul class="tabs tabs-floorplan" data-tabs id="tabs-floorplan">
-              <li class="tabs-title"><a href="#floorG" aria-selected="true">G</a></li>
-              <li class="tabs-title is-active"><a href="#floor1">1</a></li>
+              <li class="tabs-title is-active"><a href="#floorG" aria-selected="true">G</a></li>
+              <li class="tabs-title"><a href="#floor1">1</a></li>
               <li class="tabs-title"><a href="#floor2">2</a></li>
               <li class="tabs-title"><a href="#floor3">3</a></li>
             </ul>
           </div>
 
           <p>
-            <strong>Step 2: All green color are available office spaces, select your space to enquire.</strong>
+            <strong>
+              <span class="show-for-large">Step 2: All green color are available office spaces, select your space to enquire.</span>
+              <span class="hide-for-large">Step 2: View the office layout below, and enquire more about available spaces.</span>
+            </strong>
           </p>
           <div class="l-floorplan">
             <div class="tabs-content" data-tabs-content="tabs-floorplan">
               <div class="floorplan-wrap">
-                <div id="floorG" class="tabs-panel">
-                  {{> floorplan_sme1_g}}
+                <div id="floorG" class="tabs-panel is-active">
+                  {{> floorplan--sme1-g}}
                 </div>
-                <div id="floor1" class="tabs-panel is-active">
-                  <div class="floorplan-img-wrap">
-                    <img src="/assets/img/floorplan/sme1-1.jpg" alt="SME">
-                    <div class="floorplan-units-wrap"></div>
-                  </div>
+                <div id="floor1" class="tabs-panel">
+                  {{> floorplan--sme1-1}}
                 </div>
                 <div id="floor2" class="tabs-panel">
-                  <div class="floorplan-img-wrap">
-                    <img src="/assets/img/floorplan/sme1-2.jpg" alt="SME">
-                    <div class="floorplan-units-wrap"></div>
-                  </div>
+                  {{> floorplan--sme1-2}}
                 </div>
                 <div id="floor3" class="tabs-panel">
-                  <div class="floorplan-img-wrap">
-                    <img src="/assets/img/floorplan/sme1-3.jpg" alt="SME">
-                    <div class="floorplan-units-wrap"></div>
-                  </div>
+                  {{> floorplan--sme1-3}}
                 </div>
               </div>
             </div>
@@ -272,6 +282,10 @@ script: [
                 </div>
                 {{/each}}
               </div>
+            </div>
+            <div class="hide-for-large text-center" style="margin-top: 40px;">
+              <p>Feel free to contact us to find out more about the space and vacancies</p>
+              <a href="#" class="button">Ask us</a>
             </div>
           </div>
         </div>
@@ -311,11 +325,7 @@ script: [
                   <div class="columns _left">
                     <h5 class="show-for-small-only">{{title}}</h5>
                     <img src="http://placehold.it/200x130">
-                  </div>
-
-                  <div class="columns _right">
-                    <h5 class="hide-for-small-only">{{title}}</h5>
-                    <ul class="media--info">
+                    <ul class="media--info hide-for-large">
                       <li>
                         <div class="media-object">
                           <div class="media-object-section middle">
@@ -327,6 +337,32 @@ script: [
                         </div>
                       </li>
                       <li>
+                        <div class="media-object">
+                          <div class="media-object-section middle">
+                            <i class="icon-email"></i>
+                          </div>
+                          <div class="media-object-section">
+                            <a href="#">Send Email</a>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="columns _right">
+                    <h5 class="hide-for-small-only">{{title}}</h5>
+                    <ul class="media--info">
+                      <li class="show-for-large">
+                        <div class="media-object">
+                          <div class="media-object-section middle">
+                            <i class="icon2-link"></i>
+                          </div>
+                          <div class="media-object-section">
+                            <a href="#">Visit Website</a>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="show-for-large">
                         <div class="media-object">
                           <div class="media-object-section middle">
                             <i class="icon-email"></i>

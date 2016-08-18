@@ -209,8 +209,10 @@
       }
     }
 
-    + li {
-      margin-left: 10px;
+    @include breakpoint(large) {
+      + li {
+        margin-left: 10px;
+      }
     }
   }
 }
