@@ -1,3 +1,12 @@
+.floorplan-img-wrap {
+  .nohover {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+  }
+}
+
 .unit {
   display: block;
   position: absolute;
@@ -32,6 +41,14 @@
     &:hover > span {
       background: lighten($floorplan-occupied, 10%);
     }
+
+    > svg {
+      fill: $floorplan-occupied;
+    }
+
+    &:hover > svg {
+      fill: lighten($floorplan-occupied, 10%);
+    }
   }
 
   &[data-vacant="true"] {
@@ -42,13 +59,14 @@
     &:hover > span {
       background: lighten($floorplan-vacant, 5%);
     }
-  }
-}
 
-.unit {
-  &.size-43x43 {
-    width: 43px;
-    height: 43px;
+    > svg {
+      fill: $floorplan-vacant;
+    }
+
+    &:hover > svg {
+      fill: lighten($floorplan-vacant, 5%);
+    }
   }
 }
 
@@ -63,7 +81,7 @@
   position: absolute;
   text-align: left;
   margin-top: 2px;
-  top: 100%;
+  top: 50%;
   height: auto;
   width: 246px;
   z-index: 2;
