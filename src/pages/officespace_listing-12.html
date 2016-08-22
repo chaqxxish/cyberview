@@ -242,7 +242,8 @@ event: [{
               <li class="tabs-title"><a href="#floor1">1</a></li>
               <li class="tabs-title"><a href="#floor2">2</a></li>
               <li class="tabs-title"><a href="#floor3">3</a></li>
-              <li class="tabs-title"><a href="#floor4">4-5</a></li>
+              <li class="tabs-title"><a href="#floor4">4</a></li>
+              <li class="tabs-title"><a href="#floor5">5</a></li>
               <li class="tabs-title"><a href="#floor6">6</a></li>
             </ul>
           </div>
@@ -269,7 +270,10 @@ event: [{
                   {{> floorplan--12-3}}
                 </div>
                 <div id="floor4" class="tabs-panel">
-                  {{> floorplan--12-4-5}}
+                  {{> floorplan--12-4-5 unit='12-4-01'}}
+                </div>
+                <div id="floor5" class="tabs-panel">
+                  {{> floorplan--12-4-5 unit='12-5-01'}}
                 </div>
                 <div id="floor6" class="tabs-panel">
                   {{> floorplan--12-6}}
