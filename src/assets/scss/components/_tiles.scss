@@ -394,20 +394,15 @@
   p {
     line-height: rem-calc(22px);
   }
-
-  .tiles__cta {
-    position: static;
-    padding-left: 0;
-  }
+  
 
   .tiles__content {
     position: relative;
-  }
+    height: 100%;
 
-  @include breakpoint(large) {
     .tiles__cta {
-      position: absolute;
-      padding-left: rem-calc(25px);
+      bottom: 0;
+      padding-left: 0;
     }
   }
 }
@@ -439,13 +434,6 @@
   @include breakpoint(large) {
     height: rem-calc(450px);
   } 
-}
-
-.tiles--events {
-  .tiles__cta {
-    position: static;
-    margin-bottom: 15px;
-  }
 }
 
 .tiles--career {
