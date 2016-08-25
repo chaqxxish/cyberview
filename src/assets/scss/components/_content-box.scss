@@ -58,21 +58,34 @@
     @include flex-grid-column(12);
   }
 
-  > ._left {
-    @include flex-grid-order(0);
+  > .officespace--tenant-info {
+    @include flex-grid-order(1);
+
+    h5 {
+      display: none;
+    }
   }
 
-  > ._right {
-    @include flex-grid-order(1);
+  > .officespace--tenant-image {
+    @include flex-grid-order(0);
+
+    h5 {
+      display: block;
+    }
+  }
+
+  .officespace--title-medium {
+    display: none;
   }
 
   .media--info {
     li {
       margin-right: 10px;
+      width: 200px;
+      display: block;
 
       @include breakpoint(large) {
-        width: 40%;
-        margin-right: 40px;
+        margin-right: 0;
       }
     }
 
@@ -97,23 +110,29 @@
   }
 
   @include breakpoint(medium) {
-    > .columns {
-      @include flex-grid-column(6);
-    }
-
     > .columns--float {
       .float-right {
         margin-right: -10px;
       }
     }
 
-    > ._left {
+    > .officespace--tenant-info {
       @include flex-grid-order(0);
+      @include flex-grid-column(8);
     }
 
-    > ._right {
+    > .officespace--tenant-image {
       @include flex-grid-order(1);
+      @include flex-grid-column(4);
       padding-right: 0;
+
+      h5 {
+        display: none;
+      }
+    }
+
+    .officespace--title-medium {
+      display: block;
     }
 
     &.is-inverted {
@@ -129,6 +148,22 @@
 
       > ._right {
         padding-right: 10px;
+      }
+    }
+
+    .media--info li {
+      display: inline-block;
+    }
+  }
+
+  @include breakpoint(large) {
+    .officespace--title-medium {
+      display: none;
+    }
+
+    .officespace--tenant-info {
+      h5 {
+        display: block;
       }
     }
   }
@@ -149,12 +184,13 @@
       }
     }
 
-    > ._left {
+    > .officespace--tenant-image {
+      float: right;
       max-width: rem-calc(210px);
     }
 
-    > ._right {
-      max-width: rem-calc(640px);
+    > .officespace--tenant-info {
+      max-width: 100%;
       padding-right: 0;
     }
 
